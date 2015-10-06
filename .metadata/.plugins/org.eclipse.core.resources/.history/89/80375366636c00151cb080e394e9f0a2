@@ -141,8 +141,8 @@ public class RedLobsterDesktopMenu {
 		        
 		        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        Actions action = new Actions(driver);
-		        WebElement we = driver.findElement(By.linkText("Shop Products"));
-		        action.moveToElement(we).moveToElement(driver.findElement(By.linkText("Shop Products"))).click().build().perform();
+		        WebElement we = driver.findElement(By.className("menu-slide"));
+		        action.moveToElement(we).moveToElement(driver.findElement(By.className("menu-slide"))).click().build().perform();
 		    
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

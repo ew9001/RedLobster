@@ -1,0 +1,23 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Browser Print " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Print on browser Firefox 35">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="brand.dawn.DawnDesktopLogin"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    
+    
+</suite>

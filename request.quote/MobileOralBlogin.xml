@@ -1,0 +1,24 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Galaxy S3 Login " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+      <test name="Galaxy S3 Login Test">
+        <parameter name="browser" value="mobileGalaxyS3"/>
+        <classes>
+            <class name="brand.oralb.MobileOralBLogin"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    
+    
+       
+    
+    
+</suite>

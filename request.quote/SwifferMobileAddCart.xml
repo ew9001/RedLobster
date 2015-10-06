@@ -1,0 +1,21 @@
+  <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Add to Cart" verbose="1">
+    <parameter name="param" value="Test"/>
+    <test name="Add to Cart Galaxy S3 ">
+        <parameter name="browser" value="mobileGalaxyS3"/>
+        <classes>
+            <class name="brand.charmin.CharminMobileCart"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+
+    
+     
+    
+</suite>

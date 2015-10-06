@@ -1,0 +1,74 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Browser Login " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Login on browser Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="brand.puffs.PuffsLogin"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="Login on browser  IE10">
+        <parameter name="browser" value="browserIE10"/>
+        <classes>
+            <class name="brand.puffs.PuffsLogin"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="Login on browser IE11">
+        <parameter name="browser" value="browserIE11"/>
+        <classes>
+            <class name="brand.puffs.PuffsLogin"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     <test name="Login on browser Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="brand.puffs.PuffsLogin"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+         <test name="Login on browser Safari">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="brand.puffs.PuffsLogin"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    
+</suite>

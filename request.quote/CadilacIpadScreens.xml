@@ -1,0 +1,18 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Cadillac Ipad Screenshots" verbose="1">
+    <parameter name="param" value="Test"/>
+    <test name="ObjectExitTest simple example">
+        <parameter name="browser" value="tabletIpad4thGen7"/>
+        <classes>
+            <class name="brand.cadillac.IPadCadilacScreenshots"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+</suite>
+

@@ -1,0 +1,24 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Browser Print " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="S4 Test">
+        <parameter name="browser" value="mobileiPhone5S"/>
+        <classes>
+            <class name="brand.crest.AndroidCrestArticle"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    
+    
+    
+</suite>

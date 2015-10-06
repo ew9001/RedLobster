@@ -1,0 +1,24 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Desktop Menu Click " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Desktop Windows 8 IE 10">
+        <parameter name="browser" value="browserWindows8IE10"/>
+        <classes>
+            <class name="redlobster.desktop.RedLobsterDesktopMenu"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+   
+    
+    
+</suite>

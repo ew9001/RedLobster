@@ -1,0 +1,70 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Add to Cart" verbose="1">
+    <parameter name="param" value="Test"/>
+    <test name="ObjectExitTest simple example">
+        <parameter name="browser" value="browserIE10"/>
+        <classes>
+            <class name="brand.charmin.CharminTopNav"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="ObjectExitTest simple IE11">
+        <parameter name="browser" value="browserIE11"/>
+        <classes>
+            <class name="brand.charmin.CharminTopNav"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="ObjectExitTest simple Safari">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="brand.charmin.CharminTopNav"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="ObjectExitTest simple Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="brand.charmin.CharminTopNav"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    
+    <test name="ObjectExitTest simple firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="brand.charmin.CharminTopNav"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+</suite>

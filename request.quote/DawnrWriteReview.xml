@@ -1,0 +1,80 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Write Review " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Review on browser Firefox 35">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="brand.dawn.DawnWriteReview"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     
+    <test name="Review on browser IE10">
+        <parameter name="browser" value="browserIE10"/>
+        <classes>
+            <class name="brand.dawn.DawnWriteReview"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     
+    <test name="Review on browser Safari">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="brand.dawn.DawnWriteReview"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     
+    <test name="Review on browser Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="brand.dawn.DawnWriteReview"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     
+    <test name="Review on browser IE11">
+        <parameter name="browser" value="browserIE11"/>
+        <classes>
+            <class name="brand.dawn.DawnWriteReview"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+   
+    
+    
+</suite>

@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Login with browser " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+   
+ 
+    
+    <test name="mobileGalaxyS4">
+        <parameter name="browser" value="mobileGalaxyS4"/>
+        <classes>
+            <class name="brand.tampax.production.BountyAddCart"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+   
+    
+    
+</suite>

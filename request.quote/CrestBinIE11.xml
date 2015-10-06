@@ -1,0 +1,76 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Browser Print " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Bin 2.0 Test On browser Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="brand.pepto.PeptoBinDesktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="Bin 2.0 Test On browser  IE10">
+        <parameter name="browser" value="browserIE10"/>
+        <classes>
+            <class name="brand.pepto.PeptoBinDesktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    
+     <test name="Bin 2.0 Test On browser  Safari">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="brand.pepto.PeptoBinDesktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     <test name="Bin 2.0 Test On browser  Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="brand.pepto.PeptoBinDesktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    
+    <test name="Bin 2.0 Test On browser IE11">
+        <parameter name="browser" value="browserIE11"/>
+        <classes>
+            <class name="brand.pepto.PeptoBinDesktop"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    
+</suite>

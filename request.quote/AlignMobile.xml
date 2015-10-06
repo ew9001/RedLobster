@@ -1,0 +1,78 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Browser Print " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+     <test name="Screen grab on browser iPhone 4S">
+        <parameter name="browser" value="mobileiPhone4S"/>
+        <classes>
+            <class name="brand.align.AlignDesktopScreen"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="Screen grab on browser iPhone 5S">
+        <parameter name="browser" value="mobileiPhone5S"/>
+        <classes>
+            <class name="brand.align.AlignDesktopScreen"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="Screen grab on browser  Galaxy S4 ">
+        <parameter name="browser" value="mobileGalaxyS4"/>
+        <classes>
+            <class name="brand.align.AlignDesktopScreen"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+    <test name="Screen grab on browser Galaxy S3">
+        <parameter name="browser" value="mobileGalaxyS3"/>
+        <classes>
+            <class name="brand.align.AlignDesktopScreen"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     <test name="Screen grab on browser Galaxy S5">
+        <parameter name="browser" value="mobileGalaxyS5"/>
+        <classes>
+            <class name="brand.align.AlignDesktopScreen"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+     
+    
+    
+    
+   
+    
+    
+</suite>

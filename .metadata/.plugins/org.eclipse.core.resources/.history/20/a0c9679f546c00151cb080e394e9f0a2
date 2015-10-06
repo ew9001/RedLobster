@@ -270,9 +270,9 @@ public class RedLobsterDesktopMenu {
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Windows 8 IE10");
 	      browser_type="browserWindows8IE10";
-	      System.out.println("Let me see which browser I'm using " +browser_type);
-	      System.out.println("Let me see which driver I'm using" +driver);
-	      driver.get("http://dawn-dish.com/");
+	      System.out.println("Let me see which one get tested" +browser_type);
+	      System.out.println("Let me see which one get tested" +driver);
+	      driver.get("https://nhl.com");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      System.out.println(data);
 	      return driver;

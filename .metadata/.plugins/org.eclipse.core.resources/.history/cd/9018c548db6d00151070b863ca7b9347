@@ -145,18 +145,13 @@ public class RedLobsterDesktopMenu {
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			       
 		        
-		        
-		        
-		        
-		        
-		        
-		   
+		        WebElement elems=driver.findElement(By.linkText("Shop Products"));
+		        Actions builder = new Actions(driver);
+		        Actions hoverOverRegistrar = builder.moveToElement(elems);
+		        //hoverOverRegistrar.click().build().perform();
 
-		        WebElement element = driver.findElement(By.linkText("Shop Products"));
-		        
-		        Actions action = new Actions(driver);
-		 
-		        action.moveToElement(element).perform();
+
+		        	//elems.click();//at last Menu Item Click
 		        
 		        
 		        

@@ -312,7 +312,7 @@ public class RedLobsterDesktopMenu {
 	      browser_type="browserWindows8IE10";
 	      System.out.println("Let me see which browser I'm using " +browser_type);
 	      System.out.println("Let me see which driver I'm using" +driver);
-	      driver.get("http://yahoo.com/");
+	      driver.get("http://dawn-dish.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      System.out.println(data);
 	      return driver;

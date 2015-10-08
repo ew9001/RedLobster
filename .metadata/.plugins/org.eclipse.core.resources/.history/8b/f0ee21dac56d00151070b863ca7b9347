@@ -148,7 +148,7 @@ public class RedLobsterDesktopMenu {
 		        WebElement elems=driver.findElement(By.linkText("Shop Products"));
 		        Actions builder = new Actions(driver);
 		        Actions hoverOverRegistrar = builder.moveToElement(elems);
-		        //hoverOverRegistrar.click().build().perform();
+		        hoverOverRegistrar.click().build().perform();
 
 
 		        	//elems.click();//at last Menu Item Click

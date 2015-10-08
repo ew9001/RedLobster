@@ -152,7 +152,7 @@ public class RedLobsterDesktopMenu {
 		        
 		   
 
-		        WebElement element = driver.findElement(By.cssSelector("phdesktopheader_0_phdesktopheaderbottom_0_li1 > a"));
+		        WebElement element = driver.findElement(By.linkText("Shop Products"));
 		        
 		        Actions action = new Actions(driver);
 		 

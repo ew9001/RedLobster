@@ -89,7 +89,7 @@ public class RedLobsterDesktopMenu {
 			}
 		  
 		  else if (browser.equals("browserWindows10IE11")) {
-			  driver=browserWindows10IE11();
+			  driver=browserWindows8IE10();
 			   csvFileToRead = data2;
 			}
 		  else if (browser.equals("browserIE10")) {

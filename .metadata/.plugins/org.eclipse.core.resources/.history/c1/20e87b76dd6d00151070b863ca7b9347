@@ -148,10 +148,12 @@ public class RedLobsterDesktopMenu {
 		        
 		        
 		        
-		   
+		        
+		        
 		   
 
-		        WebElement element = driver.findElement(By.xpath(".//*[@id='phdesktopheader_0_phdesktopheaderbottom_0_li1']/a"));
+		        WebElement element = driver.findElement(By.cssSelector("phdesktopheader_0_phdesktopheaderbottom_0_li1 > a"));
+		        
 		        Actions action = new Actions(driver);
 		 
 		        action.moveToElement(element).perform();

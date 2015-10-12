@@ -148,9 +148,7 @@ public class RedLobsterDesktopMenu {
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			       
 		        
 		        
 		        
@@ -166,8 +164,6 @@ public class RedLobsterDesktopMenu {
 		        
 		        
 		       
-		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Shop_Products.png";

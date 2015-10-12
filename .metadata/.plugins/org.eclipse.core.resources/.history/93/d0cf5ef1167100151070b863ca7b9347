@@ -79,11 +79,6 @@ public class RedLobsterDesktopMenu {
 			  csvFileToRead = data2;
 			}
 		  
-		  else if (browser.equals("firefoxMAC")) {
-			  driver=browserFirefoxYasomin();
-			  csvFileToRead = data2;
-			}
-		  
 		  else if (browser.equals("browserIE11")) {
 			  driver=browserIE11();
 			   csvFileToRead = data2;
@@ -117,7 +112,7 @@ public class RedLobsterDesktopMenu {
 			  
 		 
 		  System.out.println("Let me run get driver "+driver);
-		  fail="/failed/" + browser +"_"+ counter + "_" + "Failed.png";
+		  fail="/Error/"+ browser+"/Failed/" + timeStamp + "_" + "page_error.png";
 			 
 		  
 		  
@@ -385,35 +380,6 @@ public class RedLobsterDesktopMenu {
 	    
 	      
 	 }
-	 
-	 public WebDriver browserFirefoxYasomin() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run Yasomin");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Firefox");
-		 caps.setCapability("browser_version", "40.0");
-		 caps.setCapability("os", "OS X");
-		 caps.setCapability("os_version", "Yosemite");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type="browserChrome39";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("https://nhl.com");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      System.out.println(data);
-	      return driver;
-	   
-	    
-	      
-	 }
-	 
 	 
 	 
 	 public WebDriver browserSafari() throws MalformedURLException  

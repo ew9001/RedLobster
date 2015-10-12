@@ -79,11 +79,6 @@ public class RedLobsterDesktopMenu {
 			  csvFileToRead = data2;
 			}
 		  
-		  else if (browser.equals("firefoxMAC")) {
-			  driver=browserFirefoxYasomin();
-			  csvFileToRead = data2;
-			}
-		  
 		  else if (browser.equals("browserIE11")) {
 			  driver=browserIE11();
 			   csvFileToRead = data2;

@@ -18,8 +18,8 @@
         </groups>
     </test>
     
-     <test name="Desktop Yasomin Firefox 40 ">
-        <parameter name="browser" value="firefoxMAC"/>
+     <test name="Desktop Windows 10 IE 11">
+        <parameter name="browser" value="browserWindows10IE11"/>
         <classes>
             <class name="redlobster.desktop.RedLobsterDesktopMenu"/>
         </classes>
@@ -32,7 +32,7 @@
     </test>
     
        <test name="MAC OS Safari 8">
-        <parameter name="browser" value="safari"/>
+        <parameter name="browser" value="browserSafari"/>
         <classes>
             <class name="redlobster.desktop.RedLobsterDesktopMenu"/>
         </classes>

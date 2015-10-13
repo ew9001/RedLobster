@@ -1,4 +1,4 @@
-package redlobster.register;
+package redlobster.desktop;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -24,6 +24,8 @@ import org.openqa.selenium.Rotatable;
 import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Keyboard;
 import org.openqa.selenium.remote.Augmenter;
@@ -54,8 +56,8 @@ public class RedLobsterDesktopMenu {
 		static String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 	    int counter=1;
 		String local=(new java.io.File("").getAbsolutePath());
-		String data="" + local + "/" + "dawn_product_production.csv";	
-		String data2="" + local + "/" + "dawn_product_production.csv";	
+		String data="" + local + "/" + "homepage.csv";	
+		String data2="" + local + "/" + "homepage.csv";	
 		String myTitle;
 		String csvFileToRead;
 	    String safe = "https://10.10.10.34:8080/job/TESTNG3/ws/PageLoads1";
@@ -77,8 +79,22 @@ public class RedLobsterDesktopMenu {
 			  csvFileToRead = data2;
 			}
 		  
+		  else if (browser.equals("firefoxMAC")) {
+			  driver=browserFirefoxYasomin();
+			  csvFileToRead = data2;
+			}
+		  
 		  else if (browser.equals("browserIE11")) {
 			  driver=browserIE11();
+			   csvFileToRead = data2;
+			}
+		  else if (browser.equals("browserWindows8IE10")) {
+			  driver=browserWindows8IE10();
+			   csvFileToRead = data2;
+			}
+		  
+		  else if (browser.equals("browserWindows10IE11")) {
+			  driver=browserWindows10IE11();
 			   csvFileToRead = data2;
 			}
 		  else if (browser.equals("browserIE10")) {
@@ -101,7 +117,7 @@ public class RedLobsterDesktopMenu {
 			  
 		 
 		  System.out.println("Let me run get driver "+driver);
-		  fail="/Error/"+ browser+"/Failed/" + timeStamp + "_" + "page_error.png";
+		  fail="/failed/" + browser +"_"+ counter + "_" + "Failed.png";
 			 
 		  
 		  
@@ -133,108 +149,44 @@ public class RedLobsterDesktopMenu {
 			    	//Thread.sleep(1000);
 			    //} changed
 		        
-		        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-		     
-		    
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        
+		        
+		        
+		        
 		   
-		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture-portrait.png";
+		   
+
+		        WebElement element = driver.findElement(By.xpath(".//*[@id='phdesktopheader_0_phdesktopheaderbottom_0_li1']/a"));
+		        Actions action = new Actions(driver);
+		 
+		        action.moveToElement(element).perform();
+		        
+		        
+		        
+		       
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Shop_Products.png";
 		        takeScreenPortrait(name);
 		        System.out.println("Image Name " +name);
 		        counter+=1;
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		        driver.findElement(By.id("phdesktopbody_0_phdesktopproductprimarycontentarea_0_anchrAddToCartLeft")).click();
-		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture-portrait.png";
-		        takeScreenPortrait(name);
-		        System.out.println("Image Name " +name);
-		        counter+=1;
-		        driver.findElement(By.id("imgCloseButton")).click();
-		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture-portrait.png";
-		        takeScreenPortrait(name);
-		        System.out.println("Image Name " +name);
-		        counter+=1;
+		       
 		        
 		        Thread.sleep(5000);
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        
-		        name=""+ browser+"/landscape/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture-landscape.png";
-		        takeScreenLandscape(name);
-		        System.out.println("Image Name " +name);
-		        takeScreenPortrait(name);
-		        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-		          driver.get("http://dawn-dish.com/en-us//shopping-cart");
-			     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Cart-portrait.png";
-			        takeScreenPortrait(name);
-			        System.out.println("Image Name " +name);
-			        name=""+ browser+"/landscape/" + browser +"_"+ counter + "_" + "Successful-Completed-Cart-landscape.png";
-			        takeScreenLandscape(name);
-			        System.out.println("Image Name " +name);
-			        takeScreenPortrait(name);
-			        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        
-			        
-			        
-			     //   driver.findElement(By.id("imgCloseButton")).click();
-			        
-			        
-			        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Cart-portrait.png";
-			        takeScreenPortrait(name);
-			        System.out.println("Image Name " +name);
-			        name=""+ browser+"/landscape/" + browser +"_"+ counter + "_" + "Successful-Completed-Cart-landscape.png";
-			        takeScreenLandscape(name);
-			        System.out.println("Image Name " +name);
-			        takeScreenPortrait(name);
-			        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-			        counter+=1;
-			        
-		        if (browser.equals("mobileiPhone5S")||browser.equals("mobileiPhone4S")||browser.equals("mobileiPhone5")||browser.equals("mobileiPhone5C")||browser.equals("tabletKindleFire2")||browser.equals("tabletKindleFireHD"))
-		        {
-		        	JavascriptExecutor jse = (JavascriptExecutor)driver;
-		        jse.executeScript("scroll(0, 14700)"); //y value '250' can be altered
-		        	   driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-		        	 name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Scrolled-Capture.png";
-				        System.out.println("Image Name is 1  " +name);
-				        takeScreenPortrait(name);
-		        }
-		        System.out.println("Edit Button");
-		        driver.findElement(By.linkText("Edit")).click();
-		        //driver.findElement(By.className("edit-btn btn")).click();
-		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Cart-portrait.png";
-		        takeScreenPortrait(name);
-		        System.out.println("Image Name " +name);
-		        name=""+ browser+"/landscape/" + browser +"_"+ counter + "_" + "Successful-Completed-Cart-landscape.png";
-		        takeScreenLandscape(name);
-		        System.out.println("Image Name " +name);
-		        takeScreenPortrait(name);
-		        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-		       
-		        
-		        counter+=1;
-		        
-                driver.findElement(By.linkText("Remove")).click();
-		        
-		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Cart-portrait.png";
-		        takeScreenPortrait(name);
-		        System.out.println("Image Name " +name);
-		        name=""+ browser+"/landscape/" + browser +"_"+ counter + "_" + "Successful-Completed-Cart-landscape.png";
-		        takeScreenLandscape(name);
-		        System.out.println("Image Name " +name);
-		        takeScreenPortrait(name);
-		        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		       
 		        
 		        counter+=1;
@@ -322,6 +274,62 @@ public class RedLobsterDesktopMenu {
 	      
 	 } 
 	 
+	 
+	 public WebDriver browserWindows8IE10() throws MalformedURLException  
+	 {  
+	  
+		 System.out.println("Let me run Windows 8 IE 10 ");
+		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		 caps.setCapability("browser", "Firefox");
+		 caps.setCapability("browser_version", "40.0");
+		 caps.setCapability("os", "Windows");
+		 caps.setCapability("os_version", "10");
+		 caps.setCapability("resolution", "1024x768");
+		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("acceptSslCerts", "true");
+		    driver = new RemoteWebDriver(new URL(URL), caps);
+	      System.out.println("Let me run Windows 8 IE10");
+	      browser_type="browserWindows8IE10";
+	      System.out.println("Let me see which browser I'm using " +browser_type);
+	      System.out.println("Let me see which driver I'm using" +driver);
+	      driver.get("http://dawn-dish.com/");
+	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	      System.out.println(data);
+	      return driver;
+	   
+	    
+	      
+	 } 
+	 
+	 
+	 public WebDriver browserWindows10IE11() throws MalformedURLException  
+	 {  
+	  
+		 System.out.println("Let me run Windows 10 IE 11 ");
+		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		 caps.setCapability("browser", "IE");
+		 caps.setCapability("browser_version", "11.0");
+		 caps.setCapability("os", "Windows");
+		 caps.setCapability("os_version", "10");
+		 caps.setCapability("resolution", "1024x768");
+		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("acceptSslCerts", "true");
+		    driver = new RemoteWebDriver(new URL(URL), caps);
+	      System.out.println("Let me run Windows 8 IE11");
+	      browser_type="browserWindows8IE10";
+	      System.out.println("Let me see which browser I'm using " +browser_type);
+	      System.out.println("Let me see which driver I'm using" +driver);
+	      driver.get("http://yahoo.com/");
+	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	      System.out.println(data);
+	      return driver;
+	   
+	    
+	      
+	 } 
+	 
 	 public WebDriver browserChrome() throws MalformedURLException  
 	 {  
 	  
@@ -377,6 +385,35 @@ public class RedLobsterDesktopMenu {
 	    
 	      
 	 }
+	 
+	 public WebDriver browserFirefoxYasomin() throws MalformedURLException  
+	 {  
+	  
+		 System.out.println("Let me run Yasomin");
+		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		 caps.setCapability("browser", "Firefox");
+		 caps.setCapability("browser_version", "40.0");
+		 caps.setCapability("os", "OS X");
+		 caps.setCapability("os_version", "Yosemite");
+		 caps.setCapability("resolution", "1024x768");
+		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("acceptSslCerts", "true");
+		    driver = new RemoteWebDriver(new URL(URL), caps);
+	      System.out.println("Let me run Firefox  39 MAC OS");
+	      browser_type="browserChrome39";
+	      System.out.println("Let me see which one get tested" +browser_type);
+	      System.out.println("Let me see which one get tested" +driver);
+	      driver.get("https://nhl.com");
+	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	      driver.manage().window().maximize();
+	      System.out.println(data);
+	      return driver;
+	   
+	    
+	      
+	 }
+	 
 	 
 	 
 	 public WebDriver browserSafari() throws MalformedURLException  

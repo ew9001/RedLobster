@@ -401,7 +401,7 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type="browserChrome39";
+	      browser_type="browserFirefoxYasomin";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
 	      driver.get("https://nhl.com");

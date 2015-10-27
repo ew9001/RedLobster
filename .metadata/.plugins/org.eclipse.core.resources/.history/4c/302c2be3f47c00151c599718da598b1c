@@ -31,7 +31,6 @@ import org.openqa.selenium.interactions.Keyboard;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -153,9 +152,13 @@ public class RedLobsterDesktopMenu {
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		  
-		        WebDriverWait wait = new WebDriverWait(driver, 15);
-		        WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='phdesktopheader_0_phdesktopheaderbottom_0_li1']/a")));
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        
 		        
 		   
@@ -163,8 +166,7 @@ public class RedLobsterDesktopMenu {
 
 		        WebElement element = driver.findElement(By.xpath(".//*[@id='phdesktopheader_0_phdesktopheaderbottom_0_li1']/a"));
 		        Actions action = new Actions(driver);
-		        
-		        
+		 
 		        action.moveToElement(element).perform();
 		        
 		        

@@ -265,7 +265,7 @@ public class RedLobsterDesktopMenu {
 	      browser_type="browserIE10";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("https://nhl.com");
+	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      System.out.println(data);
 	      return driver;
@@ -348,7 +348,7 @@ public class RedLobsterDesktopMenu {
 	      browser_type="browserChrome39";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("https://nhl.com");
+	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);
@@ -376,7 +376,7 @@ public class RedLobsterDesktopMenu {
 	      browser_type="browserChrome39";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("https://nhl.com");
+	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);
@@ -404,7 +404,7 @@ public class RedLobsterDesktopMenu {
 	      browser_type="browserFirefoxYasomin";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("https://nhl.com");
+	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);

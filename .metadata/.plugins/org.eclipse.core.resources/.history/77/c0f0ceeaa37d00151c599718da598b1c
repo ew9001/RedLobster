@@ -112,11 +112,6 @@ public class RedLobsterDesktopMenu {
 			  driver=browserIpad();
 			   csvFileToRead = data2;
 			}
-		  
-		  else if (browser.equals("browserAndroidTablet")) {
-			  driver=browserAndroidTablet();
-			   csvFileToRead = data2;
-			}
 
 	
 		  
@@ -409,34 +404,6 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("os", "OS X");
 		 caps.setCapability("os_version", "Mavericks");
 		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-			
-		 caps.setCapability("acceptSslCerts", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type="browserChrome39";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://www.publicis.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      System.out.println(data);
-	      return driver;
-	   
-	    
-	      
-	 }
-	 
-	 public WebDriver browserAndroidTablet() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run Galaxy Tablet");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browserName", "android");
-		 caps.setCapability("platform", "ANDROID");
-		 caps.setCapability("device", "Samsung Galaxy Tab 4 10.1");
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 			

@@ -5,20 +5,7 @@
     
     
     
-      <test name="Android Tablet">
-        <parameter name="browser" value="browserAndroidTablet"/>
-        <classes>
-            <class name="redlobster.desktop.RedLobsterDesktopMenu"/>
-        </classes>
- 
-        <groups>
-            <run>
-                <include name="create"/>
-            </run>
-        </groups>
-    </test>
-    
-        <test name="Android Tablet">
+      <test name="Ipad Air ">
         <parameter name="browser" value="browserIpad"/>
         <classes>
             <class name="redlobster.desktop.RedLobsterDesktopMenu"/>
@@ -31,7 +18,6 @@
         </groups>
     </test>
     
-        
     
     <test name="Desktop Windows 8 IE 10">
         <parameter name="browser" value="browserWindows8IE10"/>

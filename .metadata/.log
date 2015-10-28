@@ -659,3 +659,6 @@ Binding(COMMAND+SHIFT+P,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-10-28 14:45:35.753
+!MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/RedLobsterMenu.xml]

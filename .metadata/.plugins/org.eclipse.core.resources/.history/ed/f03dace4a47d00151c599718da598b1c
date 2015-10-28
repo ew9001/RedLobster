@@ -18,7 +18,7 @@
         </groups>
     </test>
     
-        <test name="iPAD Tablet">
+        <test name="Android Tablet">
         <parameter name="browser" value="browserIpad"/>
         <classes>
             <class name="redlobster.desktop.RedLobsterDesktopMenu"/>

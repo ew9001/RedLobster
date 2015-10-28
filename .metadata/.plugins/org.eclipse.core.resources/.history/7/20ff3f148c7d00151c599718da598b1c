@@ -107,11 +107,6 @@ public class RedLobsterDesktopMenu {
 			  driver=browserFirefox();
 			   csvFileToRead = data2;
 			}
-		  
-		  else if (browser.equals("browserIpad")) {
-			  driver=browserIpad();
-			   csvFileToRead = data2;
-			}
 
 	
 		  
@@ -297,34 +292,6 @@ public class RedLobsterDesktopMenu {
 	
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Windows 8 IE10");
-	      browser_type="browserWindows8IE10";
-	      System.out.println("Let me see which browser I'm using " +browser_type);
-	      System.out.println("Let me see which driver I'm using" +driver);
-	      driver.get("http://yahoo.com/");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      System.out.println(data);
-	      return driver;
-	   
-	    
-	      
-	 } 
-	 
-	 
-	 public WebDriver browserIpad() throws MalformedURLException  
-	 {  
-	  
-		 System.out.println("Let me run iPAD air ");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browserName", "iPad");
-		 caps.setCapability("platform", "MAC");
-		 caps.setCapability("device", "iPad Air");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-	
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run iPAD air");
 	      browser_type="browserWindows8IE10";
 	      System.out.println("Let me see which browser I'm using " +browser_type);
 	      System.out.println("Let me see which driver I'm using" +driver);

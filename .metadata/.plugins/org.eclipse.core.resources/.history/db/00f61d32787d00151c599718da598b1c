@@ -288,8 +288,6 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-	
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Windows 8 IE10");
 	      browser_type="browserWindows8IE10";
@@ -372,8 +370,6 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("os_version", "Mavericks");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-			
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Firefox  39 MAC OS");
@@ -403,8 +399,6 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-			
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Firefox  39 MAC OS");
 	      browser_type="browserFirefoxYasomin";

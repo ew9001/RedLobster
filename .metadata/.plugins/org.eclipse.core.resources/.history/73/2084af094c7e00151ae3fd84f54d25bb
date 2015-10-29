@@ -242,7 +242,6 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("browserstack.1Identifier", "Cascade");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run IE11");
@@ -270,7 +269,6 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run IE10");
@@ -357,7 +355,6 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("os_version", "10");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Windows 8 IE11");
@@ -386,7 +383,6 @@ public class RedLobsterDesktopMenu {
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("acceptSslCerts", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Chrome 39 MAC OS");
 	      browser_type="browserChrome39";
@@ -440,7 +436,7 @@ public class RedLobsterDesktopMenu {
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browserName", "android");
 		 caps.setCapability("platform", "ANDROID");
-		 caps.setCapability("device", "Samsung Galaxy Note 10.1");
+		 caps.setCapability("device", "Samsung Galaxy Tab 4 10.1");
 		 caps.setCapability("browserstack.debug", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 			

@@ -165,7 +165,7 @@ public class RedLobsterDesktopMenu {
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		        WebDriverWait wait = new WebDriverWait(driver, 15);
-		        WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='menu-drop-down']")));
+		        WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='menu-drop-down']/a")));
 		        
 		        
 		      //*[@id="menu-drop-down"]

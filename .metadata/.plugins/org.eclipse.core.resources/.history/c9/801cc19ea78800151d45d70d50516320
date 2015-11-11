@@ -8,7 +8,7 @@
     <test name="Crest Link Checker with  browser Firefox">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="brand.bounty.BountyDesktopLogins"/>
+            <class name="brand.bounty.BountyLogin"/>
         </classes>
  
         <groups>

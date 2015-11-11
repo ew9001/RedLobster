@@ -958,7 +958,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.local", "true");
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("browserstack.localIdentifier", "Firefox");
 		 
 		

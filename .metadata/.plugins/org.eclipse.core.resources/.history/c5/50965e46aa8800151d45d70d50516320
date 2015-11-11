@@ -273,7 +273,7 @@ public class BountyLogin {
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		        driver.get("https://bountytowels.com/en-us/loginpage");
+		        driver.findElement(By.linkText("LOGIN")).click();
 		        
 		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture-portrait.png";
 		        takeScreenPortrait(name);

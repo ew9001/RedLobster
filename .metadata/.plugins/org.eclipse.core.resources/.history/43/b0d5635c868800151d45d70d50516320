@@ -61,7 +61,6 @@ public class RedLobsterDesktopMenu {
 		String data2="" + local + "/" + "homepage.csv";	
 		String myTitle;
 		String csvFileToRead;
-		String slide1 = "Today's Fresh Fish";
 	    String safe = "https://10.10.10.34:8080/job/TESTNG3/ws/PageLoads1";
 	  @Test(groups = {"create"})
 		@Parameters({"browser"})
@@ -186,7 +185,7 @@ public class RedLobsterDesktopMenu {
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "menu_dropdown.png";
+		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Shop_Products.png";
 		        takeScreenPortrait(name);
 		        System.out.println("Image Name " +name);
 		        counter+=1;
@@ -198,16 +197,6 @@ public class RedLobsterDesktopMenu {
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        
 		        
-		        WebElement element2 = driver.findElement(By.xpath("//*[contains(@span,'"+slide1+"')]"));
-		        Actions action2 = new Actions(driver);
-		        
-		        
-		        action.moveToElement(element).perform();
-		        
-		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "slide_1_hover.png";
-		        takeScreenPortrait(name);
-		        System.out.println("Image Name " +name);
-		        counter+=1;
 		       
 		        
 		        counter+=1;

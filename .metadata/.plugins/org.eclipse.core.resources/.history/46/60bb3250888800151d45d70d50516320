@@ -198,7 +198,7 @@ public class RedLobsterDesktopMenu {
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        
 		        
-		        WebElement element2 = driver.findElement(By.cssSelector("li > a > span"));
+		        WebElement element2 = driver.findElement(By.xpath("//*[contains(@span,'"+slide1+"')]"));
 		        Actions action2 = new Actions(driver);
 		        
 		        

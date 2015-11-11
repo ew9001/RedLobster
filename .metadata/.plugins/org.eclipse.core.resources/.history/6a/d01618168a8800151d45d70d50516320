@@ -198,7 +198,7 @@ public class RedLobsterDesktopMenu {
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        
 		        
-		        WebElement element2 = driver.findElement((By.xpath("//img[@ src='images/nav-menu/menu-fresh-fish.jpg']")));
+		        WebElement element2 = driver.findElement(By.cssSelector("li > a > span"));
 		        Actions action2 = new Actions(driver);
 		        
 		        

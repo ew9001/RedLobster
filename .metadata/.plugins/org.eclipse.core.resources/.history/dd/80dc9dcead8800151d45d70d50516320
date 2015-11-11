@@ -371,11 +371,11 @@ public class BountyLogin {
 				        System.out.println("Image Name is  " +name);
 				        takeScreenPortrait(name);
 		        }
-		        driver.get("http://bountytowels.com/en-us/reset-password");
+		        driver.get("https://bountytowels.com/en-us/resetpasswordpage");
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		   //     driver.findElement(By.id("phdesktopbody_0_LoginSubmitBtn")).click();
+		        driver.findElement(By.id("phdesktopbody_0_LoginSubmitBtn")).click();
 		        
 		        
 		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture-portrait.png";

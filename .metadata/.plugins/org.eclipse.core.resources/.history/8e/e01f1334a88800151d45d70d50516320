@@ -501,7 +501,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.localIdentifier", "Firefox");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
@@ -530,7 +530,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.localIdentifier", "Firefox");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
@@ -559,7 +559,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("os_version", "Mountain Lion");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.localIdentifier", "Firefox");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
@@ -587,7 +587,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Samsung Galaxy S III");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("rotatable", true);
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("deviceOrientation", "landscape");
@@ -615,7 +615,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Samsung Galaxy S4");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("rotatable", true);
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("deviceOrientation", "landscape");
@@ -643,7 +643,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Samsung Galaxy S5");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("rotatable", true);
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("deviceOrientation", "landscape");
@@ -671,7 +671,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Samsung Galaxy S5 Mini");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("rotatable", true);
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("deviceOrientation", "landscape");
@@ -719,7 +719,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "HTC One X");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run mobileHTCOneX");
@@ -774,7 +774,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Google Nexus 7");
 		 caps.setCapability("browserstack.debug", "true");
-		  //
+		  //caps.setCapability("browserstack.local", "true");
 		  caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 		  
@@ -897,7 +897,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Motorola Razr Maxx HD");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run mobileRazorHD");
@@ -916,7 +916,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Samsung Galaxy S2");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Samsung Galaxy S2");
@@ -936,7 +936,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Samsung Galaxy Note II");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run GalaxyNote 2");
@@ -958,7 +958,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.debug", "true");
-		 
+		 caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("browserstack.localIdentifier", "Firefox");
 		 
 		
@@ -981,7 +981,7 @@ public class BountyDesktopLogins {
 		 iPhoneCaps.setCapability("platform", "MAC");
 		 iPhoneCaps.setCapability("device", "iPhone 4S");
 		 iPhoneCaps.setCapability("browserstack.debug", "true");
-		// iPhone
+		// iPhoneCaps.setCapability("browserstack.local", "true");
 		 iPhoneCaps.setCapability("acceptSslCerts", "true");
 		 
 
@@ -1009,7 +1009,7 @@ public class BountyDesktopLogins {
 		 iPhoneCaps.setCapability("browserstack.debug", "true");
 		 iPhoneCaps.setCapability("rotatable", true);
 		 iPhoneCaps.setCapability("deviceOrientation","landscape");
-		// iPhone
+		// iPhoneCaps.setCapability("browserstack.local", "true");
 		 iPhoneCaps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), iPhoneCaps);
 		    
@@ -1073,7 +1073,7 @@ public class BountyDesktopLogins {
 		 iPhoneCaps.setCapability("device", "LG Nexus 4");
 		 iPhoneCaps.setCapability("deviceOrientation","landscape");
 		 iPhoneCaps.setCapability("browserstack.debug", "true");
-		// iPhone
+		// iPhoneCaps.setCapability("browserstack.local", "true");
 		 iPhoneCaps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), iPhoneCaps);
 		    
@@ -1142,7 +1142,7 @@ public class BountyDesktopLogins {
 		 caps.setCapability("os_version", "Yosemite");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
-		 //
+		 //caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		 caps.setCapability("browserstack.localIdentifier", "Firefox");
 		    driver = new RemoteWebDriver(new URL(URL), caps);

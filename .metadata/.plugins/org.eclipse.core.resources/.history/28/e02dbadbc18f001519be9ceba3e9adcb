@@ -143,7 +143,7 @@ public class SwifferPreferenceCenter {
 			    //} changed
 		        
 		      //------------------Blank Login-----------------------------------
-				driver.get("swiffer.com");
+				driver.get("pepto-bismol.com");
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

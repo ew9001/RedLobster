@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  Preference Center Crest Android</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Preference Center Crest Android</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 20 16:11:12 EST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>307 seconds (307443 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>create </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='brand.production.mobile.CrestGalaxyS5PreferenceCenter.afterMethod_takeScreenshot()'><b>afterMethod_takeScreenshot</b><br>Test class: brand.production.mobile.CrestGalaxyS5PreferenceCenter<br>Test method: take screenshot on fails<br>Parameters: [TestResult name=beforeClass status=FAILURE method=CrestGalaxyS5PreferenceCenter.beforeClass(java.lang.String)[pri:0, instance:brand.production.mobile.CrestGalaxyS5PreferenceCenter@714ae2c1] output={null}]</td>
+<td><div><pre>java.io.IOException: Destination &apos;/failed&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1015)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:968)
+	at brand.production.mobile.CrestGalaxyS5PreferenceCenter.afterMethod_takeScreenshot(CrestGalaxyS5PreferenceCenter.java:766)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace574813774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace574813774'><pre>java.io.IOException: Destination &apos;/failed&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1015)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:968)
+	at brand.production.mobile.CrestGalaxyS5PreferenceCenter.afterMethod_takeScreenshot(CrestGalaxyS5PreferenceCenter.java:766)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+</pre></div></td>
+<td>0</td>
+<td>brand.production.mobile.CrestGalaxyS5PreferenceCenter@714ae2c1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='brand.production.mobile.CrestGalaxyS5PreferenceCenter.beforeClass()'><b>beforeClass</b><br>Test class: brand.production.mobile.CrestGalaxyS5PreferenceCenter<br>Parameters: mobileGalaxyS5</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;phsmartphonebody_0_username&quot;}
+  (Session info: webview=30.0.0.0)
+  (Driver info: chromedriver=2.18.343837 (52eb4041461e46a6b73308ebb19e85787ced4281),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;usnycpww4255.global.publicisgroupe.net&apos;, ip: &apos;169.254.175.215&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.3&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 577671fb40a370989e41776225e71c1e6a87773c
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=30.0.0.0, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at brand.production.mobile.CrestGalaxyS5PreferenceCenter.beforeClass(CrestGalaxyS5PreferenceCenter.java:380)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1083461053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1083461053'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;phsmartphonebody_0_username&quot;}
+  (Session info: webview=30.0.0.0)
+  (Driver info: chromedriver=2.18.343837 (52eb4041461e46a6b73308ebb19e85787ced4281),platform=Mac OS X 10.10.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;usnycpww4255.global.publicisgroupe.net&apos;, ip: &apos;169.254.175.215&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.3&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 577671fb40a370989e41776225e71c1e6a87773c
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=30.0.0.0, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at brand.production.mobile.CrestGalaxyS5PreferenceCenter.beforeClass(CrestGalaxyS5PreferenceCenter.java:380)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+</pre></div></td>
+<td>306</td>
+<td>brand.production.mobile.CrestGalaxyS5PreferenceCenter@714ae2c1</td></tr>
+</table><p>
+</body>
+</html>

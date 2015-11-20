@@ -1,0 +1,33 @@
+package redlobster.desktop;
+
+import junit.framework.TestCase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class SimpleGoogleTest extends ActivityInstrumentationTestCase2<SimpleAppActivity> {
+
+    public void testGoogleShouldWork() {
+      // Create a WebDriver instance with the activity in which we want the test to run
+      WebDriver driver = new AndroidDriver(getActivity());
+      // Let’s open a web page
+      driver.get("http://www.google.com");
+
+      // Lookup for the search box by its name
+      WebElement searchBox = driver.findElement(By.name("q"));
+
+      // Enter a search query and submit
+      searchBox.sendKeys("weather in san francisco");
+      searchBox.submit();
+
+      // Making sure that Google shows 11 results
+      WebElement resultSection = driver.findElement(By.id("ires"));
+      List<WebElement> searchResults = resultSection.findElements(By.tagName("li"));
+      assertEquals(11, searchResults.size());
+
+      // Let’s ensure that the first result shown is the weather widget
+      WebElement weatherWidget = searchResults.get(0);
+      assertTrue(weatherWidget.getText().contains("Weather for San Francisco, CA"));
+    }
+}

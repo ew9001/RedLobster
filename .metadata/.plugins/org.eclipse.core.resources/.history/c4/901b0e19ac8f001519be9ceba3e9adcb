@@ -590,7 +590,7 @@ public class CrestGalaxyS5PreferenceCenter {
 	      System.out.println("Let me see which one get tested" +driver);
 	      driver.get("http://google.com");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	  
+	      driver.manage().window().maximize();
 	      System.out.println(data);
 	      return driver;
 	   

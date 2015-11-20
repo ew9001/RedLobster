@@ -276,7 +276,7 @@ public class SwifferPreferenceCenter {
 			      driver.findElement(By.id("phdesktopbody_0_username")).clear();
 			      driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("albert.golubev@pkt.com");
 			      driver.findElement(By.id("phdesktopbody_0_zipcode")).clear();
-				     driver.findElement(By.id("phdesktopbody_0_zipcode")).sendKeys("11235");
+				     driver.findElement(By.id("phdesktopbody_0_zipcode")).sendKeys("11211");
 				     driver.findElement(By.id("phdesktopbody_0_LoginSubmitBtn")).click();
 				  	counter+=1;
 				  	name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "right_user_zip.png";

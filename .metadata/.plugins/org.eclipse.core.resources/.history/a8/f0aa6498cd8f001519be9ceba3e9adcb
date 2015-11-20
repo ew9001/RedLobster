@@ -222,7 +222,7 @@ public class PeptoPreferenceCenter {
 			        takeScreenPortrait(name);
 			        System.out.println("Image Name " +name);
 			        counter+=1;
-			        driver.get("https://www.pepto-bismol.com/en-us/editprofilepage");
+			        
 			       // Edit profile Change last name to Robot and back to Sundin
 			        System.out.println("I want to change profile name");
 			        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

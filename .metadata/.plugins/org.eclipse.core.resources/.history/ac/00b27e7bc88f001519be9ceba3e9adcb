@@ -143,7 +143,7 @@ public class PeptoPreferenceCenter {
 			    //} changed
 		        
 		      //------------------Blank Login-----------------------------------
-				driver.get("pepto-bismol.com");
+				driver.get("https://swiffer.com/en-us/loginpage");
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -164,7 +164,7 @@ public class PeptoPreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				
 				
-				driver.findElement(By.linkText("Login")).click();
+				//driver.findElement(By.linkText("Sign In")).click();
 				
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -222,52 +222,7 @@ public class PeptoPreferenceCenter {
 			        takeScreenPortrait(name);
 			        System.out.println("Image Name " +name);
 			        counter+=1;
-			        
-			       // Edit profile Change last name to Robot and back to Sundin
-			        
-			        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			        driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
-			        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			        
-			        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Edit_Profile.png";
-			        takeScreenPortrait(name);
-			        System.out.println("Image Name " +name);
-			        counter+=1;
-			        
-			        
-			        driver.findElement(By.id("phdesktopbody_0$grs_consumer[lastname]")).clear();
-				      driver.findElement(By.id("phdesktopbody_0$grs_consumer[lastname]")).sendKeys("Robot");
-				      name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + " ChangedName.png";
-				        takeScreenPortrait(name);
-				        System.out.println("Image Name " +name);
-				        counter+=1;
-				    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				        driver.findElement(By.id("phdesktopbody_0_submit")).click();
-			        
 			     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-			     
-			     takeScreenPortrait(name);
-			     
-			     driver.findElement(By.id("phdesktopbody_0$grs_consumer[lastname]")).clear();
-			      driver.findElement(By.id("phdesktopbody_0$grs_consumer[lastname]")).sendKeys("Green");
-			      name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + " ChangedBackLastName.png";
-			        takeScreenPortrait(name);
-			        System.out.println("Image Name " +name);
-			        counter+=1;
-			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			        driver.findElement(By.id("phdesktopbody_0_submit")).click();
-		        
-		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		     
-		     takeScreenPortrait(name);
-			     
-			     
 				//	////Assert.assertTrue(logo.isDisplayed());
 			     
 			     //--------------------I want to change password
@@ -449,67 +404,7 @@ public class PeptoPreferenceCenter {
 							     
 							     
 							     
-								   //------------------I want to expand the menu and logout
-							     System.out.println("I want to take a picture of the expanded menu");
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-							           
-										driver.findElement(By.className("nav-open-btn")).click();
-										
-										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-												driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-												driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											 
-										 
-									  
-												name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "expanded_menu.png";
-										        takeScreenPortrait(name);
-										        System.out.println("Image Name " +name);
-										        counter+=1;
-								     
-								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										 driver.findElement(By.id("phsmartphoneheader_0_HeaderSideMenu_phsmartphoneheadercrm_0_logOffLink")).click();
-										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										 
-											name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "logged_out.png";
-									        takeScreenPortrait(name);
-									        System.out.println("Image Name " +name);
-									        counter+=1;
-								     
-								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-								     
-								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										 driver.findElement(By.id("phdesktopbody_0_logOffContinueLink")).click();
-										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										 
-									  
-								      
-								  	File scrFile4831 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-								     FileUtils.copyFile(scrFile4831, new File("Y://Brands/Crest" +  "/" + counter + "-Clicked_Logout.png"));
-								     
-								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+								 
 					     
 		        
 		        

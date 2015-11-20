@@ -3,7 +3,7 @@
 <suite name="Preference Center " verbose="1">
     <parameter name="param" value="Test"/>
     
-      <test name="Preference Center Swiffer">
+      <test name="Preference Center Pepto">
         <parameter name="browser" value="browserFirefox"/>
         <classes>
             <class name="brand.production.mobile.SwifferPreferenceCenter"/>

@@ -398,8 +398,7 @@ public class CrestGalaxyS5PreferenceCenter {
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										
 							           
 										driver.findElement(By.className("nav-open-btn")).click();
 										
@@ -423,9 +422,6 @@ public class CrestGalaxyS5PreferenceCenter {
 										
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 										 driver.findElement(By.id("phsmartphoneheader_0_HeaderSideMenu_phsmartphoneheadercrm_0_logOffLink")).click();
 										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -440,9 +436,6 @@ public class CrestGalaxyS5PreferenceCenter {
 								     
 								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 										 driver.findElement(By.id("phsmartphonebody_0_logOffContinueLink")).click();
 										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

@@ -87,7 +87,7 @@ public class PeptoPreferenceCenter {
 			  csvFileToRead = data2;
 			}
 		  
-		  else if (browser.equals("browserFirefox")) {
+		  else if (browser.equals(" browserFirefox")) {
 			  driver=browserFirefox();
 			  csvFileToRead = data2;
 			}
@@ -533,7 +533,7 @@ public class PeptoPreferenceCenter {
 	 public WebDriver browserFirefox() throws MalformedURLException  
 	 {  
 	  
-		 System.out.println("Let me run in Firefox");
+		 System.out.println("Let me run mobileGalaxyS3");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browser", "Firefox");

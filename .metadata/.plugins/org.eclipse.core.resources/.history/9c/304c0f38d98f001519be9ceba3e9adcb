@@ -153,7 +153,7 @@ public class CrestGalaxyS5PreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				
 				
-				driver.findElement(By.linkText("Login")).click();
+				driver.findElement(By.linkText("LOGIN")).click();
 				
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

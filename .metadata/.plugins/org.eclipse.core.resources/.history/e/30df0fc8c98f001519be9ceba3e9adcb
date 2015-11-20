@@ -271,7 +271,7 @@ public class PeptoPreferenceCenter {
 				//	////Assert.assertTrue(logo.isDisplayed());
 			     
 			     //--------------------I want to change password
-			  //   driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
+			     driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

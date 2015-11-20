@@ -2,20 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="browserFirefoxYasomin" key="selection"/>
+		<item value="phdesktopheader_0_phdesktopheadertop_1_LogOffLink" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="phdesktopheader_0_phdesktopheadertop_1_LogOffLink"/>
+			<item value="&quot;browserstack.local&quot;"/>
+			<item value="browserstack.local"/>
+			<item value="caps.setCapability(&quot;browserstack.local&quot;, &quot;true&quot;);"/>
+			<item value="firefox"/>
+			<item value="dawn-dish.com"/>
 			<item value="browserFirefoxYasomin"/>
 			<item value="firefoxMAC"/>
-			<item value="browserSafari"/>
-			<item value="safari"/>
-			<item value="fail"/>
-			<item value="proxy"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="bountytowels.com"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

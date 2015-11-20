@@ -1,0 +1,24 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Preference Center " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+      <test name="Preference Center Crest">
+        <parameter name="browser" value="mobileGalaxyS5"/>
+        <classes>
+            <class name="brand.production.CrestGalaxyS5PreferenceCenter"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+   
+    
+       
+    
+    
+</suite>

@@ -224,7 +224,7 @@ public class PeptoPreferenceCenter {
 			        counter+=1;
 			        
 			       // Edit profile Change last name to Robot and back to Sundin
-			        System.out.println("I want to change profile name");
+			        
 			        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

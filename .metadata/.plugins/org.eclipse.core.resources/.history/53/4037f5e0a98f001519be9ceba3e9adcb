@@ -573,7 +573,7 @@ public class CrestGalaxyS5PreferenceCenter {
 	 public WebDriver mobileGalaxyS5() throws MalformedURLException  
 	 {  
 	  
-		 System.out.println("Let me run on Galaxy S5");
+		 System.out.println("Let me run Yasomin");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browserName", "android");
@@ -588,7 +588,7 @@ public class CrestGalaxyS5PreferenceCenter {
 	      browser_type="mobileGalaxyS5";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://tut.by");
+	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);

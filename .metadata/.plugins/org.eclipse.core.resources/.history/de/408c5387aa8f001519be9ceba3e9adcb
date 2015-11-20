@@ -588,7 +588,7 @@ public class CrestGalaxyS5PreferenceCenter {
 	      browser_type="mobileGalaxyS5";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://google.com");
+	      driver.get("http://tut.by");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);

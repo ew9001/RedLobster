@@ -6,7 +6,7 @@
       <test name="Preference Center Crest">
         <parameter name="browser" value="mobileGalaxyS5"/>
         <classes>
-            <class name="brand.production.mobile.CrestGalaxyS5PreferenceCenter"/>
+            <class name="brand.production.CrestGalaxyS5PreferenceCenter"/>
         </classes>
  
         <groups>

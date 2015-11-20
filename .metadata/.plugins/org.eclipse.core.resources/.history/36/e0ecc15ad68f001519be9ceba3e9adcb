@@ -132,7 +132,7 @@ public class CrestGalaxyS5PreferenceCenter {
 			    //} changed
 		        
 		      //------------------Blank Login-----------------------------------
-				driver.get("https://swiffer.com/");
+				driver.get("https://crest.com/");
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

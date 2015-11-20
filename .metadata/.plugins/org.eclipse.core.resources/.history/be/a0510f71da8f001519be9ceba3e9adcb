@@ -202,8 +202,6 @@ public class CrestGalaxyS5PreferenceCenter {
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			      driver.findElement(By.id("phsmartphonebody_0_password")).clear();
 			      driver.findElement(By.id("phsmartphonebody_0_password")).sendKeys("zaq12wsx");
-			      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			      driver.findElement(By.id("phsmartphonebody_0_submit")).click();
 			      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

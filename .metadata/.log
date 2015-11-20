@@ -1125,3 +1125,9 @@ Binding(COMMAND+/,
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2015-11-20 14:34:42.654
 !MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/ProductionFirefoxPeptoPreferenceCenter.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-20 14:58:42.936
+!MESSAGE No valid Android XML Editor Delegate found for file /request.quote/ProductionFirefoxSwifferPreferenceCenter.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-11-20 15:00:00.943
+!MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/ProductionFirefoxSwifferPreferenceCenter.xml]

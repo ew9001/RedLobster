@@ -404,7 +404,67 @@ public class PeptoPreferenceCenter {
 							     
 							     
 							     
-								 
+								   //------------------I want to expand the menu and logout
+							     System.out.println("I want to take a picture of the expanded menu");
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							           
+										driver.findElement(By.className("nav-open-btn")).click();
+										
+										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+												driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+												driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											 
+										 
+									  
+												name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "expanded_menu.png";
+										        takeScreenPortrait(name);
+										        System.out.println("Image Name " +name);
+										        counter+=1;
+								     
+								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										 driver.findElement(By.id("phsmartphoneheader_0_HeaderSideMenu_phsmartphoneheadercrm_0_logOffLink")).click();
+										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										 
+											name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "logged_out.png";
+									        takeScreenPortrait(name);
+									        System.out.println("Image Name " +name);
+									        counter+=1;
+								     
+								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+								     
+								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										 driver.findElement(By.id("phdesktopbody_0_logOffContinueLink")).click();
+										   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+											driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+										 
+									  
+								      
+								  	File scrFile4831 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+								     FileUtils.copyFile(scrFile4831, new File("Y://Brands/Crest" +  "/" + counter + "-Clicked_Logout.png"));
+								     
+								     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					     
 		        
 		        

@@ -164,7 +164,7 @@ public class PeptoPreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				
 				
-				driver.findElement(By.linkText("Sign In")).click();
+				driver.findElement(By.linkText("Login")).click();
 				
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

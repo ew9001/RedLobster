@@ -140,7 +140,7 @@ public class CrestGalaxyS5PreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				
 				
-			//	driver.findElement(By.className("nav-open-btn")).click();
+				driver.findElement(By.className("nav-open-btn")).click();
 				
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -153,7 +153,7 @@ public class CrestGalaxyS5PreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				
 				
-		//		driver.findElement(By.linkText("Login")).click();
+				driver.findElement(By.linkText("Login")).click();
 				
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

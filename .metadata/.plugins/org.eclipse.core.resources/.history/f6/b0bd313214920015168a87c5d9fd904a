@@ -230,8 +230,14 @@ public class PeptoPreferenceCenter {
 			        counter+=1;
 			       
 				    
-				 
+				    //driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
+				    driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).clear();
+				    driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).sendKeys("Grey");
+				    driver.findElement(By.id("phdesktopbody_0_OPTS_grs_opts[840]")).click();
+				    driver.findElement(By.id("phdesktopbody_0_submit")).click();
+			     
 			    
+			     
 			  
 			     
 				//	////Assert.assertTrue(logo.isDisplayed());

@@ -1,0 +1,66 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Preference Center Pepto " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+      <test name="Preference Center Pepto in IE10 Windows7">
+        <parameter name="browser" value="browserIE10"/>
+        <classes>
+            <class name="brand.production.mobile.PeptoPreferenceCenter"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+      
+       <test name="Preference Center Pepto in Chrome 46 Windows 7">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="brand.production.mobile.PeptoPreferenceCenter"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+       
+          <test name="Preference Center Pepto in Safari MAC OS">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="brand.production.mobile.PeptoPreferenceCenter"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+          
+          <test name="Preference Center Pepto in Firefox 39 MAC OS">
+        <parameter name="browser" value="browserFirefox"/>
+        <classes>
+            <class name="brand.production.mobile.PeptoPreferenceCenter"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+   
+    
+       
+    
+    
+</suite>

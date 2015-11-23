@@ -1,0 +1,27 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Preference Center Pepto " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+      <test name="Preference Center">
+        <parameter name="browser" value="browserIE10"/>
+        <classes>
+            <class name="production.brand.TestAnotations1"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+    
+      
+     
+    
+   
+    
+       
+    
+    
+</suite>

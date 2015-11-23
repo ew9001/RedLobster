@@ -636,37 +636,6 @@ public class PeptoPreferenceCenter {
 	 }
 	 
 	 
-	 public WebDriver chrome() throws MalformedURLException  
-	 {  
-		 browser_type="chrome";
-		 System.out.println("Let me run in Chrome");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Chrome");
-		 caps.setCapability("browser_version", "46.0");
-		 caps.setCapability("os", "Windows");
-		 caps.setCapability("os_version", "7");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-			
-		 caps.setCapability("acceptSslCerts", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type="browserChrome39";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://google.com");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      System.out.println(data);
-	      return driver;
-	   
-	    
-	      
-	 }
-	 
-	 
-	 
 	 public WebDriver mobileGalaxyS5() throws MalformedURLException  
 	 {  
 	  

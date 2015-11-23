@@ -228,7 +228,33 @@ public class PeptoPreferenceCenter {
 			        takeScreenPortrait(name);
 			        System.out.println("Image Name " +name);
 			        counter+=1;
-			       
+			       // driver.get("https://www.pepto-bismol.com/en-us/editprofilepage");
+			       // Edit profile Change last name to Robot and back to Sundin
+			        System.out.println("I want to change profile name");
+			        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			        //driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
+			        driver.findElement(By.className("event_profile_update")).click();
+			        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					
+					 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+						
+					driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).clear();
+				    driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).sendKeys("Roberts");
+				    driver.findElement(By.id("phdesktopbody_0_OPTS_grs_opts[840]")).click();
+				    driver.findElement(By.id("phdesktopbody_0_submit")).click();
+				    
+				    name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + " ChangedMyLastName.png";
+			        takeScreenPortrait(name);
+			        System.out.println("Image Name " +name);
+			        counter+=1;
+				    
+			        takeScreenPortrait(name);
 				    
 				    //driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 				    driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).clear();
@@ -238,12 +264,43 @@ public class PeptoPreferenceCenter {
 			     
 			    
 			     
-			  
+			     driver.findElement(By.className("phdesktopbody_0$grs_consumer[lastname]")).clear();
+			        driver.findElement(By.className("phdesktopbody_0$grs_consumer[lastname]")).sendKeys("Test");
+			      name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + " ChangedBackLastName.png";
+			      
+			        System.out.println("Image Name " +name);
+			        counter+=1;
+			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					
+			        driver.findElement(By.id("phdesktopbody_0_submit")).click();
+			        
+			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			    	
+			        
+			        
+			        driver.navigate().refresh();
+			        takeScreenPortrait(name);
+		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		     
+		     takeScreenPortrait(name);
+			     
 			     
 				//	////Assert.assertTrue(logo.isDisplayed());
 			     
 			     //--------------------I want to change password
-			    driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
+			  //   driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

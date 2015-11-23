@@ -267,30 +267,12 @@ public class PeptoPreferenceCenter {
 			     driver.findElement(By.className("phdesktopbody_0$grs_consumer[lastname]")).clear();
 			        driver.findElement(By.className("phdesktopbody_0$grs_consumer[lastname]")).sendKeys("Test");
 			      name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + " ChangedBackLastName.png";
-			      
+			        takeScreenPortrait(name);
 			        System.out.println("Image Name " +name);
 			        counter+=1;
 			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					
 			        driver.findElement(By.id("phdesktopbody_0_submit")).click();
-			        
-			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			    	
-			        
-			        
-			        driver.navigate().refresh();
 			        takeScreenPortrait(name);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     

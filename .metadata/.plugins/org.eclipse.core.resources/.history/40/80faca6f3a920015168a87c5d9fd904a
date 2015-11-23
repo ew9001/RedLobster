@@ -62,7 +62,7 @@ public class TestAnotations1 {
 	}
 
 	@BeforeMethod  
-	@Test
+
 	public void beforeMethod(String browser) throws IOException, InterruptedException{
 
 		System.out.println("Based on PreferenceCenter.xml I will pick the browser to test on ");

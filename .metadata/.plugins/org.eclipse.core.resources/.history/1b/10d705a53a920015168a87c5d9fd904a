@@ -51,7 +51,8 @@ public class TestAnotations1 {
 	
 	static String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 	
-	
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	@BeforeClass
 
 	public void beforeClass(){
@@ -61,8 +62,7 @@ public class TestAnotations1 {
 	}
 
 	@BeforeMethod  
-	@Test(groups = {"create"})
-	@Parameters({"browser"})
+	@Test
 	public void beforeMethod(String browser) throws IOException, InterruptedException{
 
 		System.out.println("Based on PreferenceCenter.xml I will pick the browser to test on ");

@@ -93,12 +93,6 @@ public class PeptoPreferenceCenter {
 			}
 		  
 		  
-		  else if (browser.equals("browserIE10")) {
-			  driver=browserIE10();
-			  csvFileToRead = data2;
-			}
-		  
-		  
 		  
 		  
 		  
@@ -140,7 +134,7 @@ public class PeptoPreferenceCenter {
 		        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        System.out.println("The URL is " + url);	
 		        System.out.println("Image Name " +name);
-		        //driver.get(url);
+		        driver.get(url);
 		       
 		       // for (int second = 0;; second++) {
 			    //	if (second >= 60);
@@ -243,7 +237,9 @@ public class PeptoPreferenceCenter {
 					 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-						
+						 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).clear();
 				    driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).sendKeys("Roberts");
 				    driver.findElement(By.id("phdesktopbody_0_OPTS_grs_opts[840]")).click();
@@ -643,36 +639,6 @@ public class PeptoPreferenceCenter {
 	    
 	      
 	 }
-	 
-	 public WebDriver browserIE10() throws MalformedURLException  
-	 {  
-		 browser_type="browserIE10";
-		 System.out.println("Let me run in IE10");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "IE");
-		 caps.setCapability("browser_version", "10.0");
-		 caps.setCapability("os", "Windows");
-		 caps.setCapability("os_version", "7");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-			
-		 caps.setCapability("acceptSslCerts", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type="browserChrome39";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://google.com");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      System.out.println(data);
-	      return driver;
-	   
-	    
-	      
-	 }
-	 
 	 
 	 public WebDriver mobileGalaxyS5() throws MalformedURLException  
 	 {  

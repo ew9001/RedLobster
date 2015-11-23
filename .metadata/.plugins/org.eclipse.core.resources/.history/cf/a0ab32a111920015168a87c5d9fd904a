@@ -4,7 +4,7 @@
     <parameter name="param" value="Test"/>
     
       <test name="Preference Center Pepto">
-        <parameter name="browser" value="browserIE10"/>
+        <parameter name="browser" value="browserFirefox"/>
         <classes>
             <class name="brand.production.mobile.PeptoPreferenceCenter"/>
         </classes>

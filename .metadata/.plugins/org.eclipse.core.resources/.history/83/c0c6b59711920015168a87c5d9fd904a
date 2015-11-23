@@ -140,7 +140,7 @@ public class PeptoPreferenceCenter {
 		        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        System.out.println("The URL is " + url);	
 		        System.out.println("Image Name " +name);
-		        //driver.get(url);
+		        driver.get(url);
 		       
 		       // for (int second = 0;; second++) {
 			    //	if (second >= 60);

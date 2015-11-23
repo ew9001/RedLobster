@@ -746,7 +746,7 @@ public class PeptoPreferenceCenter {
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Safari");
 	      driver.manage().window().maximize();
-	      driver.get("https://google.com");
+	      driver.get("https://dawn-dish.com/en-us/resetpasswordpage");
 	      driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		    
 		    driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);

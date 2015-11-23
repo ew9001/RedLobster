@@ -408,10 +408,6 @@ public class PeptoPreferenceCenter {
 								      driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("albert.golubev@pkt.com");
 							      driver.findElement(By.id("phdesktopbody_0_password")).clear();
 							      driver.findElement(By.id("phdesktopbody_0_password")).sendKeys("zaq12wsx");
-							      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-									driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-									driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-							      
 							      driver.findElement(By.id("phdesktopbody_0_submit")).click();
 							      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 									driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -425,7 +421,7 @@ public class PeptoPreferenceCenter {
 							     
 							     
 								   //------------------I want to expand the menu and logout
-						//	     System.out.println("I want to take a picture of the expanded menu");
+							     System.out.println("I want to take a picture of the expanded menu");
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 										driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -746,7 +742,7 @@ public class PeptoPreferenceCenter {
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Safari");
 	      driver.manage().window().maximize();
-	      driver.get("https://google.com");
+	      driver.get("https://dawn-dish.com/en-us/resetpasswordpage");
 	      driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		    
 		    driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);

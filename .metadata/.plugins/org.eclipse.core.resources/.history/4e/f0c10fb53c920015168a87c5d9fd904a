@@ -91,7 +91,7 @@ public class TestAnotations1 {
 
 	}
 	
-	
+	@Test
 	@Test(groups = {"create"})
 	@Parameters({"browser"})
 	public void testBlankLogin() throws IOException{

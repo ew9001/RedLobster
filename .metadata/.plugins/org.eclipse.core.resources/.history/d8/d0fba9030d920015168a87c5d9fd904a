@@ -233,21 +233,15 @@ public class PeptoPreferenceCenter {
 			        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					
+			        
 			        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Edit_Profile.png";
 			        takeScreenPortrait(name);
 			        System.out.println("Image Name " +name);
 			        counter+=1;
 			        
 			        
-			        driver.findElement(By.className("phdesktopbody_0$grs_consumer[lastname]")).clear();
-			        driver.findElement(By.className("phdesktopbody_0$grs_consumer[lastname]")).sendKeys("Robot");
+			        driver.findElement(By.id("phdesktopbody_0$grs_consumer[lastname]")).clear();
+				      driver.findElement(By.id("phdesktopbody_0$grs_consumer[lastname]")).sendKeys("Robot");
 				      name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + " ChangedName.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
@@ -260,8 +254,8 @@ public class PeptoPreferenceCenter {
 			     
 			     takeScreenPortrait(name);
 			     
-			     driver.findElement(By.className("phdesktopbody_0$grs_consumer[lastname]")).clear();
-			        driver.findElement(By.className("phdesktopbody_0$grs_consumer[lastname]")).sendKeys("Test");
+			     driver.findElement(By.id("phdesktopbody_0$grs_consumer[lastname]")).clear();
+			      driver.findElement(By.id("phdesktopbody_0$grs_consumer[lastname]")).sendKeys("Green");
 			      name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + " ChangedBackLastName.png";
 			        takeScreenPortrait(name);
 			        System.out.println("Image Name " +name);
@@ -656,7 +650,7 @@ public class PeptoPreferenceCenter {
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run on Galaxy S5");
 	      browser_type="mobileGalaxyS5";
-	      System.out.println("Let me see which one get tested " +browser_type);
+	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
 	      driver.get("http://google.com");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

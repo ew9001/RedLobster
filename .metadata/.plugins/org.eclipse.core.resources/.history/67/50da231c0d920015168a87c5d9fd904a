@@ -656,7 +656,7 @@ public class PeptoPreferenceCenter {
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run on Galaxy S5");
 	      browser_type="mobileGalaxyS5";
-	      System.out.println("Let me see which one get tested " +browser_type);
+	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
 	      driver.get("http://google.com");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

@@ -44,7 +44,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class PeptoPreferenceCenter {
+public class ProductionGlobalPreferenceCenter {
 	private static WebDriver driver;
 	 
 	 public static final String USERNAME = "zaqwsx1";

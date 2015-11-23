@@ -358,10 +358,7 @@ public class PeptoPreferenceCenter {
 					     driver.findElement(By.id("showpassword")).click();
 					      driver.findElement(By.id("phdesktopbody_0_ResetSubmitBtn")).click();
 					     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					     
-					     checkText(error);
-					     
-					     
+
 					     System.out.println("I want to submit only numbers my password 1-8 ");
 				      driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 				      driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
@@ -384,7 +381,7 @@ public class PeptoPreferenceCenter {
 							     driver.findElement(By.id("showpassword")).click();
 							      driver.findElement(By.id("phdesktopbody_0_ResetSubmitBtn")).click();
 							     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-							     checkText(error);
+
 							     System.out.println("I want to submit only up to 8 chars upper or lower");
 						      driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 						      driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);

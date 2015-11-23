@@ -1,6 +1,6 @@
  <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
  
-<suite name="Preference Center Pepto " verbose="1">
+<suite name="Preference Center " verbose="1">
     <parameter name="param" value="Test"/>
     
       <test name="Preference Center Pepto">

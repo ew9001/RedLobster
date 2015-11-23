@@ -92,7 +92,7 @@ public class TestAnotations1 {
 	}
 	
 	@Test
-	@Parameters({"browser"})
+	//@Parameters({"browser"})
 	public void testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");

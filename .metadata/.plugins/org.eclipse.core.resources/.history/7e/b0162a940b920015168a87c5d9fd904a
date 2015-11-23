@@ -566,7 +566,7 @@ public class PeptoPreferenceCenter {
 	      browser_type="browserChrome39";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://google.com");
+	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);
@@ -596,7 +596,7 @@ public class PeptoPreferenceCenter {
 	      browser_type=" browserFirefox";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://google.com");
+	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);
@@ -624,7 +624,7 @@ public class PeptoPreferenceCenter {
 	      browser_type="browserChrome39";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://google.com");
+	      driver.get("http://www.publicis.com/");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);

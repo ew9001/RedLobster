@@ -154,7 +154,7 @@ public class PeptoPreferenceCenter {
 			    //} changed
 		        
 		      //------------------Blank Login-----------------------------------
-				driver.get("http://bountytowels.com");
+				driver.get("pepto-bismol.com");
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -162,7 +162,7 @@ public class PeptoPreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				
 				
-				driver.findElement(By.className("event_profile_login")).click();
+			//	driver.findElement(By.className("nav-open-btn")).click();
 				
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -175,7 +175,7 @@ public class PeptoPreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				
 				
-			//	driver.findElement(By.linkText("Login")).click();
+				driver.findElement(By.linkText("Login")).click();
 				
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

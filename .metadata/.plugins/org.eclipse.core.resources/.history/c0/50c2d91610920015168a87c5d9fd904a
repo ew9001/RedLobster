@@ -234,12 +234,6 @@ public class PeptoPreferenceCenter {
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					
-					 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-						 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-							driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).clear();
 				    driver.findElement(By.id("phdesktopbody_0_grs_consumer[lastname]")).sendKeys("Roberts");
 				    driver.findElement(By.id("phdesktopbody_0_OPTS_grs_opts[840]")).click();

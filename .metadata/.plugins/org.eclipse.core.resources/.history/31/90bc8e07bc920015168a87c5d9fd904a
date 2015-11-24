@@ -172,8 +172,6 @@ public class TestAnotations1 {
 
 			System.out.println("Inside Test 3 - Right Login");
 			driver.navigate().refresh();
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.findElement(By.id("phdesktopbody_0_username")).clear();
 		      driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("albert.golubev@pkt.com");
 		      driver.findElement(By.id("phdesktopbody_0_password")).clear();

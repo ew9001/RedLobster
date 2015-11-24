@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
-<suite name="Desktop Preference Center for Bounty " verbose="1">
+<suite name="Browser Login " verbose="1">
     <parameter name="param" value="Test"/>
     
     
     
-    <test name="Login on Firefox">
+    <test name="Login on browser  IE10">
         <parameter name="browser" value="browserFirefox"/>
         <classes>
             <class name="production.brand.BountyPreferenceCenter"/>
@@ -15,12 +15,12 @@
         <groups>
             <run>
                 <include name="create"/>
-                <include name="blank_login"/>
-                <include name="wrong_login"/>
-                <include name="valid_login"/>
-                <include name="reset_password_screen"/>
-                <include name="blank_password_set"/>
-                <include name="wrong_email_zip"/>
+                <include name="blank"/>
+                <include name="wrong"/>
+                <include name="wrong"/>
+                <include name="wrong"/>
+                <include name="wrong"/>
+                <include name="wrong"/>
                         
                   
             </run>

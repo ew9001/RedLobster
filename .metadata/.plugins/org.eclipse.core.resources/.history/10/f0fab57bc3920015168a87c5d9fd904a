@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Browser Login " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Login on browser  IE10">
+        <parameter name="browser" value="browserFirefox"/>
+        <classes>
+            <class name="production.brand.TestAnotations1"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+                <include name="blank"/>
+                <include name="wrong"/>
+            </run>
+        </groups>
+           
+                             
+                             
+        
+    </test>
+    
+   
+    
+    
+</suite>

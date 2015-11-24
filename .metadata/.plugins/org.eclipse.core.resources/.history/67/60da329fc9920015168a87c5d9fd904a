@@ -20,7 +20,6 @@
          </define>
          
             <run>
-            <include name="create"/>
             <include name="blank_login"/>
             <include name="wrong_login"/>
             <include name="right_login"/>

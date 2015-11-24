@@ -13,17 +13,16 @@
         <groups>
             
             <define name="all">
-            <include name="create"/>
-            <include name="blank_login"/>
-            <include name="wrong_login"/>
-            <include name="right_login"/>
+            <include name="blank1"/>
+            <include name="blank2"/>
+            <include name="blank3"/>
          </define>
          
             <run>
-            <include name="create"/>
-            <include name="blank_login"/>
-            <include name="wrong_login"/>
-            <include name="right_login"/>
+                <include name="create"/>
+                <include name="blank1"/>
+                <include name="blank2"/>
+                <include name="blank3"/>
 
                         
                   

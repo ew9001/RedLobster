@@ -502,7 +502,7 @@ public void testValidPassword() throws IOException, InterruptedException{
 	
 }
 
-@Test(priority=12)
+@Test(priority=11)
 
 public void testValidLogout() throws IOException, InterruptedException{
 

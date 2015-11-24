@@ -135,10 +135,10 @@ public class BountyPreferenceCenter {
 	
 
 	
-	 @Test(groups = {"login"})
+	 @Test(groups = { "login" })
 	
-	 public void testWrongLogin() throws IOException, InterruptedException{
-		 
+	public void testWrongLogin() throws IOException, InterruptedException{
+
 			System.out.println("Inside Test 2 - Wrong Login / Password");
 			System.out.println("---------------------------");
 			driver.findElement(By.id("phdesktopbody_0_username")).click();

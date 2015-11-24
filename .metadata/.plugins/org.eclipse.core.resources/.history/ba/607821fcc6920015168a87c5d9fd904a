@@ -15,9 +15,7 @@
         <groups>
             <run>
                 <include name="create"/>
-                <include name="blank1"/>
-                <include name="blank2"/>
-                <include name="blank3"/>
+                <include name="blank"/>
 
                         
                   

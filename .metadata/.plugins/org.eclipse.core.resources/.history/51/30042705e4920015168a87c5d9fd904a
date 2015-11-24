@@ -95,7 +95,7 @@ public class DesktopPreferenceCenter {
 	}
 	
 	
-	  @Test(groups={"unit2"})
+	  @Test(groups={"unit1"})
 	public  void testBlankLogin() {
 
 			System.out.println("Inside Test 1 - Blank Login");
@@ -151,7 +151,7 @@ public class DesktopPreferenceCenter {
 
 	}
 	
-	  @Test(groups={"unit3"})
+	  @Test(groups={"unit1"})
 	 public void testWrongLogin() {
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -195,7 +195,7 @@ public class DesktopPreferenceCenter {
 
 	
 
-	  @Test(groups={"unit4"})
+	  @Test(groups={"unit1"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");

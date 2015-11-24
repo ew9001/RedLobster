@@ -1507,3 +1507,9 @@ java.lang.NullPointerException
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2015-11-24 14:40:50.657
 !MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/testng.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-11-24 14:45:41.666
+!MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/testng.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-11-24 14:46:30.096
+!MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/testng.xml]

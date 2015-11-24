@@ -60,9 +60,9 @@ public class BountyPreferenceCenter {
 
 	}
 
+	@BeforeMethod  
 	
-	@Test
-	public WebDriver beforeMethod() throws IOException, InterruptedException{
+	public void beforeMethod() throws IOException, InterruptedException{
 
 		System.out.println("I want to test on MAC OS Firefox 39 ");
 		
@@ -87,7 +87,7 @@ public class BountyPreferenceCenter {
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);
-	      	return driver;
+		
 
 	}
 	

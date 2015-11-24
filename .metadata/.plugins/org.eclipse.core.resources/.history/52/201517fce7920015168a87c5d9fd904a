@@ -95,7 +95,7 @@ public class DesktopPreferenceCenter {
 	}
 	
 	
-	  @Test
+	  @Test(dependsOnMethods = { "beforeMethod" })
 	public  void testBlankLogin() {
 
 			System.out.println("Inside Test 1 - Blank Login");
@@ -151,7 +151,7 @@ public class DesktopPreferenceCenter {
 
 	}
 	
-	  @Test
+	  @Test(dependsOnMethods = { "testBlankLogin" })
 	 public void testWrongLogin() {
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -195,7 +195,7 @@ public class DesktopPreferenceCenter {
 
 	
 
-	  @Test
+	  @Test(dependsOnMethods = { "testWrongLogin" })
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");

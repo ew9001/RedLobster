@@ -93,7 +93,7 @@ public class BountyPreferenceCenter {
 	
 	
 	@Test
-	public WebDriver  testBlankLogin() throws IOException{
+	public void testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
@@ -127,8 +127,6 @@ public class BountyPreferenceCenter {
 		        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				
-				return driver;
 			
 
 	}
@@ -137,7 +135,7 @@ public class BountyPreferenceCenter {
 	
 	
 	@Test
-	 public WebDriver testWrongLogin() throws IOException{
+	 public void testWrongLogin() throws IOException{
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
 			System.out.println("---------------------------");
@@ -171,7 +169,7 @@ public class BountyPreferenceCenter {
 	
 
 	@Test
-	public WebDriver testValidLogin() throws IOException, InterruptedException{
+	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");
 			System.out.println("---------------------------");
@@ -209,7 +207,7 @@ public class BountyPreferenceCenter {
 
 
 	@Test
-	public WebDriver testResetPassword() throws IOException, InterruptedException{
+	public void testResetPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 4 - Reset Password\n");
 			System.out.println("---------------------------");
@@ -253,7 +251,7 @@ public class BountyPreferenceCenter {
 		
 	}
 	@Test
-	public WebDriver testSetBlankPassword() throws IOException, InterruptedException{
+	public void testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
 			System.out.println("---------------------------");
@@ -293,7 +291,7 @@ public class BountyPreferenceCenter {
 	
 	@Test
 	
-	public WebDriver1 testSetWrongPassword() {
+	public void testSetWrongPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 6 - Wrong Email & Zipcode");
 			System.out.println("---------------------------");
@@ -328,36 +326,34 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
-		     return driver;
+		
 	}
 	
 	
 	
 	@Test
 	
-	public WebDriver testRestPasswordShort(){
+	public void testRestPasswordShort(){
 
 		System.out.println("Inside Test 3 - Share Email");
 
-		return driver;
 }
 	
 	
 @Test
 	
-	public WebDriver testRestPasswordAllCapital(){
+	public void testRestPasswordAllCapital(){
 
 		System.out.println("Inside Test 3 - Share Email");
-		return driver;
-		
+
 }
 
 @Test
 
-public WebDriver testLogout(){
+public void testLogout(){
 
 	System.out.println("Inside Test 3 - Share Email");
-return driver;
+
 }
 
 	@AfterMethod

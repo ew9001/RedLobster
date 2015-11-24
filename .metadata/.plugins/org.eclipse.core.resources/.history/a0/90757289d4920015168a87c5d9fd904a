@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Browser Login " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Login on browser Chrome">
+        <parameter name="browser" value="browserFirefox"/>
+        <classes>
+            <class name="production.brand.BountyPreferenceCenter"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+         
+            </run>
+        </groups>
+        
+     
+                             
+                          
+                             
+                             
+        
+    </test>
+          <test name="Group Test 1">
+    <groups>
+      <run>
+         <include name="login1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="  <class name="production.brand.BountyPreferenceCenter"/>" />
+    </classes>
+  </test>
+  
+      
+      <test name="Group Test 2">
+    <groups>
+      <run>
+         <include name="login2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="  <class name="production.brand.BountyPreferenceCenter"/>" />
+    </classes>
+  </test>
+   
+    
+    
+</suite>

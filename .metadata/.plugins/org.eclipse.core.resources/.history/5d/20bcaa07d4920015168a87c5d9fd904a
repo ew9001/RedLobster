@@ -61,39 +61,47 @@ public class BountyPreferenceCenter {
 	}
 
 	@BeforeMethod  
-	@Test
-	
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void beforeMethod(String browser) throws IOException, InterruptedException{
 
-		System.out.println("I want to test on MAC OS Firefox 39 ");
+		System.out.println("Based on PreferenceCenter.xml I will pick the browser to test on ");
 		
-		System.out.println("Let me run in Firefox");
-		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
-		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Firefox");
-		 caps.setCapability("browser_version", "39.0");
-		 caps.setCapability("os", "OS X");
-		 caps.setCapability("os_version", "Mavericks");
-		 caps.setCapability("resolution", "1024x768");
-		 caps.setCapability("browserstack.debug", "true");
-		 caps.setCapability("browserstack.selenium_version", "2.47.1");
-			
-		 caps.setCapability("acceptSslCerts", "true");
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-	      System.out.println("Let me run Firefox  39 MAC OS");
-	      browser_type=" browserFirefox";
-	      System.out.println("Let me see which one get tested" +browser_type);
-	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("http://google.com");
-	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	      driver.manage().window().maximize();
-	      System.out.println(data);
+		if (browser.equals("safari")) {
+			  driver=browserSafari();
+			  csvFileToRead = data2;
+			}
+		  
+		  
+		  else if (browser.equals("browserFirefox")) {
+			  driver=browserFirefox();
+			  csvFileToRead = data2;
+			}
+		  
+		  
+		  else if (browser.equals("browserIE10")) {
+			  driver=browserIE10();
+			  csvFileToRead = data2;
+			}
+		  
+		  else if (browser.equals("chrome")) {
+			  driver=browserIE10();
+			  csvFileToRead = data2;
+			}
+		
+		//Run my tests;
+		//testBlankLogin();
+	//	testWrongLogin();
+		//testValidLogin();
+		//testResetPassword();
+		//testSetBlankPassword();
+	//	testSetWrongPassword();
 		
 
 	}
 	
 	
-	@Test
+	@Test(groups = {"create"})
 
 
 	public void testBlankLogin() throws IOException{
@@ -137,7 +145,7 @@ public class BountyPreferenceCenter {
 
 	
 	
-	@Test
+	@Test(groups = {"login1"})
 	 public void testWrongLogin() throws IOException{
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -171,7 +179,7 @@ public class BountyPreferenceCenter {
 
 	
 
-	@Test
+	@Test(groups = {"login2"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");

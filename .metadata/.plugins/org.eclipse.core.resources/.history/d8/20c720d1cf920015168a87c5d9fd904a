@@ -88,20 +88,11 @@ public class BountyPreferenceCenter {
 			  driver=browserIE10();
 			  csvFileToRead = data2;
 			}
-		
-		//Run my tests;
-		testBlankLogin();
-		testWrongLogin();
-		testValidLogin();
-		testResetPassword();
-		testSetBlankPassword();
-		testSetWrongPassword();
-		
 
 	}
 	
 	
-	@Test
+	@Test(groups = {"create"})
 
 
 	public void testBlankLogin() throws IOException{
@@ -145,7 +136,7 @@ public class BountyPreferenceCenter {
 
 	
 	
-	@Test
+	@Test(groups = {"create"})
 	 public void testWrongLogin() throws IOException{
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -179,7 +170,7 @@ public class BountyPreferenceCenter {
 
 	
 
-	@Test
+	@Test(groups = {"create"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");
@@ -215,7 +206,7 @@ public class BountyPreferenceCenter {
 	}
 
 
-	@Test
+	@Test(groups = {"create"})
 	public void testResetPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 4 - Reset Password\n");
@@ -248,7 +239,7 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 		
 	}
-	@Test
+	@Test(groups = {"create"})
 	public void testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
@@ -287,7 +278,7 @@ public class BountyPreferenceCenter {
 		
 	}
 	
-	@Test
+	@Test(groups = {"create"})
 	
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 

@@ -101,7 +101,7 @@ public class BountyPreferenceCenter {
 	}
 	
 	
-	@Test
+	@Test(groups = {"create"})
 
 
 	public void testBlankLogin() throws IOException{

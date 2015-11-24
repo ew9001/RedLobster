@@ -553,7 +553,7 @@ public void testValidLogout() throws IOException, InterruptedException{
 		   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.findElement(By.id("phdesktopheader_0_phdesktopheadertop_1_anchrContinue")).click();
+			driver.findElement(By.className("continue-btn btn event_profile_logout")).click();
 		 
 		 name=""+ browser_type+"/"+ counter + "_" + "Continue_Button_Click.png";
 	        takeScreenPortrait(name);

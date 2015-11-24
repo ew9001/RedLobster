@@ -1393,3 +1393,6 @@ java.lang.NullPointerException
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2015-11-23 18:30:03.075
 !MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/PreferenceCenterBrands.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-11-24 09:55:48.246
+!MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/PreferenceCenterBrands.xml]

@@ -6,7 +6,7 @@
     
     
     <test name="Login on browser  IE10">
-        <parameter name="browser" value="browserFirefox"/>
+        <parameter name="browser" value="browserIE10"/>
         <classes>
             <class name="production.brand.TestAnotations1"/>
         </classes>

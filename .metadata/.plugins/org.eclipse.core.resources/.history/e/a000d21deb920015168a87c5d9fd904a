@@ -1,12 +1,9 @@
-
  <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
  
-<suite name="Browser Login " verbose="1">
+<suite name="Preference Center Pepto " verbose="1">
     <parameter name="param" value="Test"/>
     
-    
-    
-    <test name="Login on browser mobileGalaxyS4">
+      <test name="Preference Center Pepto in Firefox">
         <parameter name="browser" value="browserFirefox"/>
         <classes>
             <class name="production.brand.BountyPreferenceCenter"/>
@@ -18,9 +15,3 @@
             </run>
         </groups>
     </test>
-    
-   
-   
-    
-    
-</suite>

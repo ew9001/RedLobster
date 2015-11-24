@@ -1537,3 +1537,9 @@ java.lang.NullPointerException
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2015-11-24 15:42:36.169
 !MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/PreferenceCenterBrands.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-24 17:51:58.373
+!MESSAGE No valid Android XML Editor Delegate found for file /request.quote/DesktopRun.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-11-24 17:54:18.350
+!MESSAGE No projects found for [/Users/agolubev1/Desktop/RedLobster/request.quote/PreferenceCenterBrands.xml]

@@ -6,10 +6,10 @@
     
     
     
-    <test name="Login on browser browserFirefox">
+    <test name="Login on browser mobileGalaxyS4">
       
         <classes>
-            <class name="brand.production.mobile.PeptoPreferenceCenter"/>
+            <class name="production.brand.DesktopPreferenceCenter"/>
         </classes>
  
         

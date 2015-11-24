@@ -61,6 +61,7 @@ public class BountyPreferenceCenter {
 	}
 
 	@BeforeMethod  
+	@Test
 	
 	public void beforeMethod(String browser) throws IOException, InterruptedException{
 
@@ -93,6 +94,8 @@ public class BountyPreferenceCenter {
 	
 	
 	@Test
+
+
 	public void testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");

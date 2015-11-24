@@ -151,7 +151,7 @@ public class DesktopPreferenceCenter {
 
 	}
 	
-	  @Test(dependsOnMethods = { "testBlankLogin" })
+	  @Test(groups={"unit2"})
 	 public void testWrongLogin() {
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -195,7 +195,7 @@ public class DesktopPreferenceCenter {
 
 	
 
-	  @Test(dependsOnMethods = { "testWrongLogin" })
+	  @Test(groups={"unit3"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");

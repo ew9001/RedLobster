@@ -8,16 +8,11 @@
     
     <test name="Login on Firefox">
         <parameter name="browser" value="browserFirefox"/>
-     
+        <classes>
+            <class name="production.brand.BountyPreferenceCenter"/>
+        </classes>
  
         <groups>
-            
-            <define name="all">
-            <include name="blank1"/>
-            <include name="blank2"/>
-            <include name="blank3"/>
-         </define>
-         
             <run>
                 <include name="create"/>
                 <include name="blank1"/>
@@ -28,9 +23,6 @@
                   
             </run>
         </groups>
-           <classes>
-            <class name="production.brand.BountyPreferenceCenter"/>
-        </classes>
          
                              
                              

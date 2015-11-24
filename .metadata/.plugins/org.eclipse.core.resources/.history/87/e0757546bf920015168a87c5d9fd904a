@@ -49,7 +49,7 @@
         
              <groups>
             <run>
-                <include name="wrong email"/>
+                <include name="wrong email "/>
             </run>
         </groups>  
                              

@@ -272,8 +272,8 @@ public class TestAnotations1 {
 		
 	}
 	
-	@Test(groups = {"wrong email"})
-	
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 6 - Wrong Email & Zipcode");

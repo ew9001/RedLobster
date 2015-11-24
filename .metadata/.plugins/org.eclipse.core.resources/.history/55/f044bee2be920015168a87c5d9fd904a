@@ -92,8 +92,8 @@ public class TestAnotations1 {
 	}
 	
 	
-	@Test(groups = {"blank"})
-
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");
@@ -133,8 +133,8 @@ public class TestAnotations1 {
 	
 
 	
-	@Test(groups = {"wrong"})
-	
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void testWrongLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -166,8 +166,8 @@ public class TestAnotations1 {
 	}
 
 	
-
-	@Parameters({"valid"})
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");
@@ -202,7 +202,8 @@ public class TestAnotations1 {
 	}
 
 
-	@Test(groups = {"reset"})
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void testResetPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 4 - Reset Password");
@@ -234,7 +235,8 @@ public class TestAnotations1 {
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 		
 	}
-	@Test(groups = {"blank password"})
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
@@ -272,8 +274,8 @@ public class TestAnotations1 {
 		
 	}
 	
-	@Test(groups = {"wrong email"})
-	
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 6 - Wrong Email & Zipcode");

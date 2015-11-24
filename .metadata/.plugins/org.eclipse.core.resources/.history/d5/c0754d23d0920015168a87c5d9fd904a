@@ -184,9 +184,7 @@ public class BountyPreferenceCenter {
 
 			System.out.println("Inside Test 3 - Right Login");
 			System.out.println("---------------------------");
-			
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.navigate().refresh();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.findElement(By.id("phdesktopbody_0_username")).clear();

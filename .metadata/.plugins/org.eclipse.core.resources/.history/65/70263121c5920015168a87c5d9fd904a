@@ -97,7 +97,6 @@ public class BountyPreferenceCenter {
 	public void testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");
-			System.out.println("---------------------------");
 			driver.get("http://bountytowels.com");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -139,7 +138,6 @@ public class BountyPreferenceCenter {
 	public void testWrongLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
-			System.out.println("---------------------------");
 			driver.findElement(By.id("phdesktopbody_0_username")).click();
 		      driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("albert.golubev@pkt.com");
 		      driver.findElement(By.id("phdesktopbody_0_password")).clear();
@@ -173,7 +171,6 @@ public class BountyPreferenceCenter {
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");
-			System.out.println("---------------------------");
 			driver.navigate().refresh();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -209,7 +206,7 @@ public class BountyPreferenceCenter {
 	public void testResetPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 4 - Reset Password\n");
-			System.out.println("---------------------------");
+			
 			 driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -242,7 +239,6 @@ public class BountyPreferenceCenter {
 	public void testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
-			System.out.println("---------------------------");
 			driver.findElement(By.id("phdesktopbody_0_LoginSubmitBtn")).click();
 		   	counter+=1;
 		      driver.manage().timeouts().implicitlyWait(450, TimeUnit.SECONDS);
@@ -282,7 +278,7 @@ public class BountyPreferenceCenter {
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 6 - Wrong Email & Zipcode");
-			System.out.println("---------------------------");
+		
 		   	
 		      driver.manage().timeouts().implicitlyWait(450, TimeUnit.SECONDS);
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

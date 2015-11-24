@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Desktop Preference Center for Bounty " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Login on Firefox">
+        <parameter name="browser" value="browserFirefox"/>
+     
+ 
+        <groups>
+            
+            <define name="all">
+            <include name="create"/>
+            <include name="login"/>
+   
+         </define>
+         
+            <run>
+            <include name="create"/>
+            <include name="login"/>
+          
+                        
+                  
+            </run>
+        </groups>
+           <classes>
+            <class name="production.brand.BountyPreferenceCenter"/>
+        </classes>
+         
+                             
+                             
+        
+    </test>
+    
+   
+    
+    
+</suite>

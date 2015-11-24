@@ -1,41 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
  
-<suite name="Desktop Preference Center for Bounty " verbose="1">
+<suite name="Preference Center Pepto " verbose="1">
     <parameter name="param" value="Test"/>
     
-    
-    
-    <test name="Login on Firefox">
+      <test name="Preference Center Pepto in Firefox">
         <parameter name="browser" value="browserFirefox"/>
-     
- 
-        <groups>
-            
-            <define name="all">
-            <include name="create"/>
-            <include name="login"/>
-   
-         </define>
-         
-            <run>
-            <include name="create"/>
-            <include name="login"/>
-          
-                        
-                  
-            </run>
-        </groups>
-           <classes>
+        <classes>
             <class name="production.brand.BountyPreferenceCenter"/>
         </classes>
-         
-                             
-                             
-        
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+                <include name="login"/>
+            </run>
+        </groups>
     </test>
-    
-   
-    
-    
-</suite>

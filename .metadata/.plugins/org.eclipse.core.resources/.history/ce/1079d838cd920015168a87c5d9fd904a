@@ -135,8 +135,8 @@ public class BountyPreferenceCenter {
 	
 
 	
+	 @Test(groups= "login")
 	
-	 @Test(dependsOnGroups = {"login"})
 	 public void testWrongLogin() throws IOException{
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");

@@ -271,46 +271,6 @@ public class TestAnotations1 {
 		
 	}
 	
-	@Test(groups = {"create"})
-	@Parameters({"browser"})
-	public void testSetWrongPassword() throws IOException, InterruptedException{
-
-			System.out.println("Inside Test 6 - Wrong Email & Zipcode");
-		
-		   	
-		      driver.manage().timeouts().implicitlyWait(450, TimeUnit.SECONDS);
-			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			 
-			     driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
-			     driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("aik1771#yasasf.com");
-			     driver.findElement(By.id("phdesktopbody_0_zipcode")).sendKeys("11235");
-			     driver.findElement(By.id("phdesktopbody_0_LoginSubmitBtn")).click();
-			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			  	counter+=1;
-			  	
-			     driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
-			 	driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
-				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
-				
-				error ="We could not find an account with that Email address and Birthday/ZIP code.";
-			    checkText(error);
-			    
-				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
-				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
-				
-				
-				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				name=""+ browser_type+"/"+ counter + "_" + "Wrong email and zipcode.png";
-		        takeScreenPortrait(name);
-		        System.out.println("Image Name " +name);
-		        counter+=1;
-		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
-		
-	}
-	
 	
 	
 	@Test

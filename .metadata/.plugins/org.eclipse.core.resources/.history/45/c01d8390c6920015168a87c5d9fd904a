@@ -15,15 +15,9 @@
         <groups>
             <run>
                 <include name="create"/>
-                <include name="blank"/>
-
-                        
-                  
-            </run>
-        </groups>
-         
-                             
-                             
+                   <include name="blank"/>
+                  <include name="wrong"/>
+                       
         
     </test>
     

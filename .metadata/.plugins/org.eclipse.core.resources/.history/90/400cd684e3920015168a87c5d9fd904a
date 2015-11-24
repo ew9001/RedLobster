@@ -61,7 +61,6 @@ public class DesktopPreferenceCenter {
 	}
 
 	@BeforeMethod  
-	  @Test(groups={"unit1"})
 	public void beforeMethod() {
 
 		System.out.println("I want to test using browser firefox ");

@@ -84,7 +84,7 @@ public class DesktopPreferenceCenter  {
 				e.printStackTrace();
 			}
 	      System.out.println("Let me run Chrome 46 on Windows");
-	      browser_type=" dawn";
+	      browser_type=" MacOS42Chrome";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
 	      driver.get("http://www.google.com");
@@ -100,7 +100,7 @@ public class DesktopPreferenceCenter  {
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
-			driver.get("http://dawn-dish.com/");
+			driver.get("http://swiffer.com/en-us");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.findElement(By.className("event_profile_login")).click();

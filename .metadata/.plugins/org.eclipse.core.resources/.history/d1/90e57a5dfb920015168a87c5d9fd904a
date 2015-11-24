@@ -87,7 +87,7 @@ public class DesktopPreferenceCenter  {
 	      browser_type=" MacOS42";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
-	      driver.get("metawellness.com");
+	      driver.get("http://google.com");
 	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	      driver.manage().window().maximize();
 	      System.out.println(data);
@@ -100,7 +100,7 @@ public class DesktopPreferenceCenter  {
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
-			driver.get("http://metawellness.com");
+			driver.get("http://bountytowels.com");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.findElement(By.className("event_profile_login")).click();

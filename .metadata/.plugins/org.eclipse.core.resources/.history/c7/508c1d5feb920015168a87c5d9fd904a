@@ -92,7 +92,10 @@ public class BountyPreferenceCenter {
 	}
 	
 	@Test(priority=1)
-	public WebDriver testBlankLogin() throws IOException{
+	
+
+
+	public void testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
@@ -126,7 +129,7 @@ public class BountyPreferenceCenter {
 		        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			return driver;
+			
 
 	}
 	

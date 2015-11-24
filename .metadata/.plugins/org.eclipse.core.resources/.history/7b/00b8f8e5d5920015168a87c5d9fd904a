@@ -165,8 +165,6 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
-		     
-		     return driver;
 		
 	}
 
@@ -206,8 +204,6 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
-		     
-		     return driver;
 		
 	}
 
@@ -254,8 +250,6 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
-		     
-		     return driver;
 		
 	}
 	@Test
@@ -295,12 +289,11 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 		
-		     return driver;
 	}
 	
 	@Test
 	
-	public WebDriver testSetWrongPassword() throws IOException {
+	public WebDriver1 testSetWrongPassword() {
 
 			System.out.println("Inside Test 6 - Wrong Email & Zipcode");
 			System.out.println("---------------------------");

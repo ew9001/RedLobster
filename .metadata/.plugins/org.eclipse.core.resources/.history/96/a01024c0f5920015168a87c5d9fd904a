@@ -68,8 +68,8 @@ public class DesktopPreferenceCenter  {
 		System.out.println("Let me run in Firefox");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Safari");
-		 caps.setCapability("browser_version", "8.0");
+		 caps.setCapability("browser", "Firefox");
+		 caps.setCapability("browser_version", "42.0");
 		 caps.setCapability("os", "OS X");
 		 caps.setCapability("os_version", "Yosemite");
 		 caps.setCapability("resolution", "1024x768");

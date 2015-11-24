@@ -228,7 +228,7 @@ public class BountyPreferenceCenter {
 			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			
+			 driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 			 
 			 
 				driver.findElement(By.className("event_profile_update")).click();

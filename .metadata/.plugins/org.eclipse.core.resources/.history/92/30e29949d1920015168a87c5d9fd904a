@@ -222,18 +222,7 @@ public class BountyPreferenceCenter {
 
 			System.out.println("Inside Test 4 - Reset Password\n");
 			System.out.println("---------------------------");
-		 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			
-			 
-			 
-				driver.findElement(By.className("event_profile_update")).click();
-			 
-			 
+			 driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

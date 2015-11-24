@@ -5,7 +5,6 @@
       
      <groups>
     <define name="all">
-              <include name="unit0"/>
       <include name="unit1"/>
       <include name="unit2"/>
       <include name="unit3"/>

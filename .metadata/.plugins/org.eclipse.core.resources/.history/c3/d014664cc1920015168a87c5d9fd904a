@@ -197,7 +197,7 @@ public class ProductionGlobalPreferenceCenter {
 					////Assert.assertTrue(logo.isDisplayed());
 			   //------------------Wrong Login-----------------------------------
 			     
-			      driver.findElement(By.id("phdesktopbody_0_username")).click();
+			     driver.findElement(By.id("phdesktopbody_0_username")).click();
 			      driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("albert.golubev@pkt.com");
 			      driver.findElement(By.id("phdesktopbody_0_password")).clear();
 			      driver.findElement(By.id("phdesktopbody_0_password")).sendKeys("zaq12wsx1234");

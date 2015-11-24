@@ -7,12 +7,16 @@
     
     
     <test name="Login on browser mobileGalaxyS4">
-      
+        <parameter name="browser" value="browserFirefox"/>
         <classes>
             <class name="production.brand.DesktopPreferenceCenter"/>
         </classes>
  
-        
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
     </test>
     
    

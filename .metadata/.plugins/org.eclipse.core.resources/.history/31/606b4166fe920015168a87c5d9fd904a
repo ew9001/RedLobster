@@ -155,7 +155,7 @@ public class PeptoPreferenceCenter {
 			    //} changed
 		        
 		      //------------------Blank Login-----------------------------------
-				driver.get("http://puffs.com/en-us");
+				driver.get("http://www.charmin.com");
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

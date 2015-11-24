@@ -68,8 +68,8 @@ public class DesktopPreferenceCenter  {
 		System.out.println("Let me run in Firefox");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Chrome");
-		 caps.setCapability("browser_version", "46.0");
+		 caps.setCapability("browser", "Firefox");
+		 caps.setCapability("browser_version", "42.0");
 		 caps.setCapability("os", "Windows");
 		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
@@ -83,8 +83,8 @@ public class DesktopPreferenceCenter  {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	      System.out.println("Let me run Chrome 46 on Windows");
-	      browser_type=" Chrome46Windows7";
+	      System.out.println("Let me run Firefox  39 MAC OS");
+	      browser_type=" browserFirefox";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
 	      driver.get("http://google.com");
@@ -156,7 +156,7 @@ public class DesktopPreferenceCenter  {
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
 			System.out.println("---------------------------");
-			driver.findElement(By.id("phdesktopbody_0_username")).clear();
+			driver.findElement(By.id("phdesktopbody_0_username")).click();
 		      driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("albert.golubev@pkt.com");
 		      driver.findElement(By.id("phdesktopbody_0_password")).clear();
 		      driver.findElement(By.id("phdesktopbody_0_password")).sendKeys("zaq12wsx1234");
@@ -208,7 +208,7 @@ public class DesktopPreferenceCenter  {
 		      driver.findElement(By.id("phdesktopbody_0_password")).clear();
 		      driver.findElement(By.id("phdesktopbody_0_password")).sendKeys("zaq12wsx");
 		      driver.findElement(By.id("phdesktopbody_0_submit")).click();
-		      System.out.println("--------------------------------------------");
+		      
 		      System.out.println("I want to take a picture of the Valid Login");
 		      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -235,7 +235,7 @@ public class DesktopPreferenceCenter  {
 	public void testResetPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 4 - Reset Password\n");
-			System.out.println("---------------------------------");
+			System.out.println("---------------------------");
 			 driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

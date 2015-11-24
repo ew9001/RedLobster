@@ -15,12 +15,12 @@
         <groups>
             <run>
                 <include name="create"/>
-                <include name="blank"/>
-                <include name="wrong"/>
-                <include name="valid"/>
-                <include name="reset"/>
-                <include name="blank2"/>
-                <include name="wrong2"/>
+                <include name="blank_login"/>
+                <include name="wrong_login"/>
+                <include name="valid_login"/>
+                <include name="reset_password_screen"/>
+                <include name="blank_password_set"/>
+                <include name="wrong_email_zip"/>
                         
                   
             </run>

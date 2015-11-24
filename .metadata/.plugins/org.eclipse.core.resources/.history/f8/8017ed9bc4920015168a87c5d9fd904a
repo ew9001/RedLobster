@@ -92,7 +92,7 @@ public class BountyPreferenceCenter {
 	}
 	
 	
-	@Test(groups = {"blank"})
+	@Test(groups = {"blank_login"})
 
 	public void testBlankLogin() throws IOException{
 
@@ -133,7 +133,7 @@ public class BountyPreferenceCenter {
 	
 
 	
-	@Test(groups = {"wrong"})
+	@Test(groups = {"wrong_login"})
 	
 	public void testWrongLogin() throws IOException, InterruptedException{
 
@@ -167,7 +167,7 @@ public class BountyPreferenceCenter {
 
 	
 
-	@Test(groups = {"valid"})
+	@Test(groups = {"valid_login"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");
@@ -202,11 +202,10 @@ public class BountyPreferenceCenter {
 	}
 
 
-	@Test(groups = {"reset"})
+	@Test(groups = {"reset_password_screen"})
 	public void testResetPassword() throws IOException, InterruptedException{
 
-			System.out.println("Inside Test 4 - Reset Password\n");
-			
+			System.out.println("Inside Test 4 - Reset Password");
 			 driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -235,7 +234,7 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 		
 	}
-	@Test(groups = {"blank2"})
+	@Test(groups = {"blank_password_set"})
 	public void testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
@@ -273,7 +272,7 @@ public class BountyPreferenceCenter {
 		
 	}
 	
-	@Test(groups = {"wrong2"})
+	@Test(groups = {"wrong_email_zip"})
 	
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 

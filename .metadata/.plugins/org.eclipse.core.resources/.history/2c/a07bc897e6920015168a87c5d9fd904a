@@ -95,7 +95,7 @@ public class DesktopPreferenceCenter {
 	}
 	
 	
-	  @Test(dependsOnMethods = { "beforeMethod" })
+	  @Test(groups={"unit1"})
 	public  void testBlankLogin() {
 
 			System.out.println("Inside Test 1 - Blank Login");

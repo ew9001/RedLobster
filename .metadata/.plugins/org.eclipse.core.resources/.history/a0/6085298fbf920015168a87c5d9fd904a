@@ -234,7 +234,7 @@ public class TestAnotations1 {
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 		
 	}
-	@Test(groups = {"blankpassword"})
+	@Test(groups = {"blank password"})
 	public void testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
@@ -272,7 +272,7 @@ public class TestAnotations1 {
 		
 	}
 	
-	@Test(groups = {"wrongemail"})
+	@Test(groups = {"wrong email"})
 	
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 

@@ -60,42 +60,40 @@ public class BountyPreferenceCenter {
 
 	}
 
-	@BeforeMethod  
-	@Test(groups = {"create"})
-	@Parameters({"browser"})
-	public void beforeMethod(String browser) throws IOException, InterruptedException{
+	
+	@Test
+	public WebDriver beforeMethod() throws IOException, InterruptedException{
 
-		System.out.println("Based on PreferenceCenter.xml I will pick the browser to test on ");
+		System.out.println("I want to test on MAC OS Firefox 39 ");
 		
-		if (browser.equals("safari")) {
-			  driver=browserSafari();
-			  csvFileToRead = data2;
-			}
-		  
-		  
-		  else if (browser.equals("browserFirefox")) {
-			  driver=browserFirefox();
-			  csvFileToRead = data2;
-			}
-		  
-		  
-		  else if (browser.equals("browserIE10")) {
-			  driver=browserIE10();
-			  csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("chrome")) {
-			  driver=browserIE10();
-			  csvFileToRead = data2;
-			}
+		System.out.println("Let me run in Firefox");
+		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		 caps.setCapability("browser", "Firefox");
+		 caps.setCapability("browser_version", "39.0");
+		 caps.setCapability("os", "OS X");
+		 caps.setCapability("os_version", "Mavericks");
+		 caps.setCapability("resolution", "1024x768");
+		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.selenium_version", "2.47.1");
+			
+		 caps.setCapability("acceptSslCerts", "true");
+		    driver = new RemoteWebDriver(new URL(URL), caps);
+	      System.out.println("Let me run Firefox  39 MAC OS");
+	      browser_type=" browserFirefox";
+	      System.out.println("Let me see which one get tested" +browser_type);
+	      System.out.println("Let me see which one get tested" +driver);
+	      driver.get("http://google.com");
+	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	      driver.manage().window().maximize();
+	      System.out.println(data);
+	      	return driver;
 
 	}
 	
 	
-	@Test(groups = {"create"})
-
-
-	public void testBlankLogin() throws IOException{
+	@Test
+	public WebDriver  testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
@@ -129,6 +127,8 @@ public class BountyPreferenceCenter {
 		        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				
+				return driver;
 			
 
 	}
@@ -137,7 +137,7 @@ public class BountyPreferenceCenter {
 	
 	
 	@Test
-	 public void testWrongLogin() throws IOException{
+	 public WebDriver testWrongLogin() throws IOException{
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
 			System.out.println("---------------------------");
@@ -165,17 +165,21 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
+		     
+		     return driver;
 		
 	}
 
 	
 
 	@Test
-	public void testValidLogin() throws IOException, InterruptedException{
+	public WebDriver testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");
 			System.out.println("---------------------------");
-			driver.navigate().refresh();
+			
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.findElement(By.id("phdesktopbody_0_username")).clear();
@@ -202,16 +206,29 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
+		     
+		     return driver;
 		
 	}
 
 
-	@Test(groups = {"create"})
-	public void testResetPassword() throws IOException, InterruptedException{
+	@Test
+	public WebDriver testResetPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 4 - Reset Password\n");
 			System.out.println("---------------------------");
-			 driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
+		 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			
+			 
+			 
+				driver.findElement(By.className("event_profile_update")).click();
+			 
+			 
 			 	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -237,19 +254,21 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
+		     
+		     return driver;
 		
 	}
-	@Test(groups = {"create"})
-	public void testSetBlankPassword() throws IOException, InterruptedException{
+	@Test
+	public WebDriver testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
 			System.out.println("---------------------------");
-			driver.findElement(By.id("phdesktopbody_0_LoginSubmitBtn")).click();
+		
 		   	counter+=1;
-		      driver.manage().timeouts().implicitlyWait(450, TimeUnit.SECONDS);
+	
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			 
-			     driver.findElement(By.id("phdesktopbody_0_HlinkReset")).click();
+			     driver.findElement(By.className("phdesktopbody_0$LoginSubmitBtn")).click();
 			     driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 			 	driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
@@ -276,11 +295,12 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 		
+		     return driver;
 	}
 	
-	@Test(groups = {"create"})
+	@Test
 	
-	public void testSetWrongPassword() throws IOException, InterruptedException{
+	public WebDriver testSetWrongPassword() throws IOException {
 
 			System.out.println("Inside Test 6 - Wrong Email & Zipcode");
 			System.out.println("---------------------------");
@@ -315,34 +335,36 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
-		
+		     return driver;
 	}
 	
 	
 	
 	@Test
 	
-	public void testRestPasswordShort(){
+	public WebDriver testRestPasswordShort(){
 
 		System.out.println("Inside Test 3 - Share Email");
 
+		return driver;
 }
 	
 	
 @Test
 	
-	public void testRestPasswordAllCapital(){
+	public WebDriver testRestPasswordAllCapital(){
 
 		System.out.println("Inside Test 3 - Share Email");
-
+		return driver;
+		
 }
 
 @Test
 
-public void testLogout(){
+public WebDriver testLogout(){
 
 	System.out.println("Inside Test 3 - Share Email");
-
+return driver;
 }
 
 	@AfterMethod

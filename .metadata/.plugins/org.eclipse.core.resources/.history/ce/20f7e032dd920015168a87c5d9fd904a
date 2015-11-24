@@ -1,0 +1,52 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Preference Center Pepto " verbose="1">
+    <parameter name="param" value="Test"/>
+    
+      <test name="Preference Center Pepto in IE10 Windows7">
+        <parameter name="browser" value="browserIE10"/>
+        <classes>
+            <class name="production.brand.BountyPreferenceCenter"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            
+            </run>
+        </groups>
+    </test>
+    
+      <test name="Group Test 1">
+    <groups>
+      <run>
+         <include name="login1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="  <class name="production.brand.BountyPreferenceCenter"/>" />
+    </classes>
+  </test>
+  
+      
+      <test name="Group Test 2">
+    <groups>
+      <run>
+         <include name="login2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="  <class name="production.brand.BountyPreferenceCenter"/>" />
+    </classes>
+  </test>
+  
+       <test name="Group Test 3">
+    <groups>
+      <run>
+         <include name="login3"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="  <class name="production.brand.BountyPreferenceCenter"/>" />
+    </classes>
+  </test>

@@ -90,12 +90,12 @@ public class BountyPreferenceCenter {
 			}
 		
 		//Run my tests;
-		//testBlankLogin();
-	//	testWrongLogin();
-		//testValidLogin();
-		//testResetPassword();
-		//testSetBlankPassword();
-	//	testSetWrongPassword();
+		testBlankLogin();
+		testWrongLogin();
+		testValidLogin();
+		testResetPassword();
+		testSetBlankPassword();
+		testSetWrongPassword();
 		
 
 	}

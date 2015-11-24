@@ -9,7 +9,7 @@
     <test name="Login on browser mobileGalaxyS4">
         <parameter name="browser" value="browserFirefox"/>
         <classes>
-            <class name="production.brand.DesktopPreferenceCenter"/>
+            <class name="production.brand.BountyPreferenceCenter"/>
         </classes>
  
         <groups>

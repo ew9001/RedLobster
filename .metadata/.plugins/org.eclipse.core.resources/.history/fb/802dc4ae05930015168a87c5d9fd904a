@@ -536,7 +536,7 @@ public void testValidLogout() throws IOException, InterruptedException{
 	     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 	     
 	     
-	     driver.findElement(By.className("logoutbtn")).click();
+	     driver.findElement(By.id("phdesktopheader_0_phdesktopheadertop_2_LogOffLink")).click();
 		   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -553,7 +553,7 @@ public void testValidLogout() throws IOException, InterruptedException{
 		   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.findElement(By.className("continue-btn btn event_profile_logout")).click();
+		 driver.findElement(By.id("phdesktopheader_0_phdesktopheadertop_2_anchrContinue")).click();
 		 
 		 name=""+ browser_type+"/"+ counter + "_" + "Continue_Button_Click.png";
 	        takeScreenPortrait(name);

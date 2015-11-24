@@ -340,9 +340,6 @@ public class DesktopPreferenceCenter  {
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
-		     
-		     driver.findElement(By.id("phdesktopbody_0_username")).clear();
-		     driver.findElement(By.id("phdesktopbody_0_zipcode")).clear();
 		
 	}
 	

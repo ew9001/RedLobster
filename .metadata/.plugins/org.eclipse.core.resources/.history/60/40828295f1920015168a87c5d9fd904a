@@ -467,8 +467,6 @@ public void testValidPassword() throws IOException, InterruptedException{
 	   	
 	      driver.manage().timeouts().implicitlyWait(450, TimeUnit.SECONDS);
 	      Thread.sleep(200);
-	      driver.findElement(By.id("phdesktopbody_0_username")).clear();
-	      driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("albert.golubev@pkt.com");
 	      driver.findElement(By.id("phdesktopbody_0_password")).clear();
 		     driver.findElement(By.id("phdesktopbody_0_password")).sendKeys("zaq12wsx");
 		     driver.findElement(By.id("showpassword")).click();

@@ -62,7 +62,7 @@ public class BountyPreferenceCenter {
 
 	@BeforeMethod  
 	
-	public void beforeMethod() throws IOException, InterruptedException{
+	public void beforeMethod(String browser) throws IOException, InterruptedException{
 
 		System.out.println("I want to test on MAC OS Firefox 39 ");
 		

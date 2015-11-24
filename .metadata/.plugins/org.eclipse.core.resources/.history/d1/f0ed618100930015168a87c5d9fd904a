@@ -100,7 +100,7 @@ public class DesktopPreferenceCenter  {
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
-			driver.get("http://swiffer.com/en-us");
+			driver.get("http://puffs.com");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.findElement(By.className("event_profile_login")).click();

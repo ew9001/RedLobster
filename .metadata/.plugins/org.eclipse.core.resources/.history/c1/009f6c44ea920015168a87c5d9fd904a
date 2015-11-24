@@ -1,0 +1,18 @@
+ <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Preference Center" verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+    <test name="Bounty Login on browser Firefox">
+        
+        <classes>
+            <class name="production.brand.BountyPreferenceCenter"/>
+        </classes>
+
+    </test>
+    
+ 
+    
+</suite>

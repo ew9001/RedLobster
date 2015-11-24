@@ -1,18 +1,17 @@
  <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
  
-<suite name="Preference Center" verbose="1">
+<suite name="Preference Center Pepto " verbose="1">
     <parameter name="param" value="Test"/>
     
-    
-    
-    <test name="Bounty Login on browser Firefox">
-        
+      <test name="Preference Center Pepto in Firefox">
+        <parameter name="browser" value="browserFirefox"/>
         <classes>
             <class name="production.brand.BountyPreferenceCenter"/>
         </classes>
-
-    </test>
-    
  
-    
-</suite>
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>

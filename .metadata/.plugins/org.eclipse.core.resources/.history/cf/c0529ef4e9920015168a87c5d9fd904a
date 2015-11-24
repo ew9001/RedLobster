@@ -91,8 +91,8 @@ public class BountyPreferenceCenter {
 
 	}
 	
-	@Test(priority=1)
 	
+	@Test(groups = {"create"})
 
 
 	public void testBlankLogin() throws IOException{
@@ -136,7 +136,7 @@ public class BountyPreferenceCenter {
 
 	
 	
-	@Test(priority=2)
+	@Test
 	 public void testWrongLogin() throws IOException{
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -170,7 +170,7 @@ public class BountyPreferenceCenter {
 
 	
 
-	@Test(priority=3)
+	@Test
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");
@@ -206,7 +206,7 @@ public class BountyPreferenceCenter {
 	}
 
 
-	@Test(priority=4)
+	@Test(groups = {"create"})
 	public void testResetPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 4 - Reset Password\n");
@@ -239,7 +239,7 @@ public class BountyPreferenceCenter {
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 		
 	}
-	@Test(priority=5)
+	@Test(groups = {"create"})
 	public void testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
@@ -278,7 +278,7 @@ public class BountyPreferenceCenter {
 		
 	}
 	
-	@Test(priority=6)
+	@Test(groups = {"create"})
 	
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 

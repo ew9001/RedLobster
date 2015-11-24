@@ -60,7 +60,7 @@ public class DesktopPreferenceCenter {
 
 	}
 
-	  @Test
+	  @Test(groups={"unit0"})
 	
 	public void beforeMethod() {
 

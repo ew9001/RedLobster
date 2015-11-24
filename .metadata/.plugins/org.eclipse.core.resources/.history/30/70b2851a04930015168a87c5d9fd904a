@@ -469,15 +469,16 @@ public void testValidPassword() throws IOException, InterruptedException{
 		System.out.println("Inside Test 10 - Set password to original");
 		System.out.println("-------------------------------------");
 	   	
+	      driver.manage().timeouts().implicitlyWait(450, TimeUnit.SECONDS);
 	      Thread.sleep(200);
+	     
 	      driver.findElement(By.id("phdesktopbody_0_password")).clear();
-		     driver.findElement(By.id("phdesktopbody_0_password")).sendKeys("zaq12wsx");
-		     driver.findElement(By.id("showpassword")).click();
-		      driver.findElement(By.id("phdesktopbody_0_ResetSubmitBtn")).click();
+	      driver.findElement(By.id("phdesktopbody_0_password")).sendKeys("zaq12wsx");
+	      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		  
+		      driver.findElement(By.id("phdesktopbody_0_ResetSubmitBtn")).click();
 		     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

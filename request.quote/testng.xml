@@ -12,7 +12,41 @@
         <groups>
             <run>
                 <include name="create"/>
-                <include name="login"/>
+            
             </run>
         </groups>
     </test>
+    
+      <test name="Group Test 1">
+    <groups>
+      <run>
+         <include name="login1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="  <class name="production.brand.BountyPreferenceCenter"/>" />
+    </classes>
+  </test>
+  
+      
+      <test name="Group Test 2">
+    <groups>
+      <run>
+         <include name="login2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="  <class name="production.brand.BountyPreferenceCenter"/>" />
+    </classes>
+  </test>
+  
+       <test name="Group Test 3">
+    <groups>
+      <run>
+         <include name="login3"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="  <class name="production.brand.BountyPreferenceCenter"/>" />
+    </classes>
+  </test>

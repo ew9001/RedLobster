@@ -145,7 +145,7 @@ public class BountyPreferenceCenter {
 
 	
 	
-	@Test(groups = {"login1"})
+	@Test(groups = {"create"})
 	 public void testWrongLogin() throws IOException{
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -179,7 +179,7 @@ public class BountyPreferenceCenter {
 
 	
 
-	@Test(groups = {"login2"})
+	@Test(groups = {"create"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");

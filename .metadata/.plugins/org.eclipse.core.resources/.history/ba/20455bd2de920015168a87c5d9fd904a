@@ -277,7 +277,7 @@ public class DesktopPreferenceCenter {
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 6 - Wrong Email & Zipcode");
-			System.out.println("-------------------------------------");
+			System.out.println("---------------------------");
 		   	
 		      driver.manage().timeouts().implicitlyWait(450, TimeUnit.SECONDS);
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -316,7 +316,7 @@ public class DesktopPreferenceCenter {
 	
 	@AfterClass
 	public void afterClass(){
-		System.out.println("Clothing the browser");
+		System.out.println("Destroy Selenium for class 1");
 	    driver.quit();
 	}
 	

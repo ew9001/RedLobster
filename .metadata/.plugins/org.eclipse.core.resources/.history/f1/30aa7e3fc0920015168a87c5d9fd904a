@@ -167,7 +167,7 @@ public class TestAnotations1 {
 
 	
 
-	@Test(groups = {"valid"})
+	@Parameters({"valid"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");

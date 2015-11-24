@@ -63,7 +63,7 @@ public class DesktopPreferenceCenter {
 	@BeforeMethod  
 	public void beforeMethod() throws IOException, InterruptedException{
 
-		System.out.println("I want to test using browser firefox ");
+		System.out.println("Based on PreferenceCenter.xml I will pick the browser to test on ");
 		System.out.println("Let me run in Firefox");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();

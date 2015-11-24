@@ -61,6 +61,8 @@ public class DesktopPreferenceCenter {
 	}
 
 	@BeforeMethod  
+	@Test(groups = {"create"})
+	@Parameters({"browser"})
 	public void beforeMethod() throws IOException, InterruptedException{
 
 		System.out.println("Based on PreferenceCenter.xml I will pick the browser to test on ");
@@ -90,7 +92,7 @@ public class DesktopPreferenceCenter {
 	
 	
 	@Test
-	public  void testBlankLogin() throws IOException{
+	public WebDriver testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
@@ -125,7 +127,7 @@ public class DesktopPreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				
-				
+				return driver;
 			
 
 	}

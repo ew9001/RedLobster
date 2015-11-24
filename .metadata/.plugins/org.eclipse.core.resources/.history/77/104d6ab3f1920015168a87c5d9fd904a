@@ -354,7 +354,6 @@ public class DesktopPreferenceCenter  {
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			 
 			     driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
-			     driver.findElement(By.id("phdesktopbody_0_username")).clear();
 			     driver.findElement(By.id("phdesktopbody_0_username")).sendKeys("albertgolubev.com");
 			     driver.findElement(By.id("phdesktopbody_0_zipcode")).sendKeys("11235");
 			     driver.findElement(By.id("phdesktopbody_0_LoginSubmitBtn")).click();

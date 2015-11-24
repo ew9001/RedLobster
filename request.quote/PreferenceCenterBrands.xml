@@ -1,12 +1,13 @@
- <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
-<suite name="Browser Print " verbose="1">
+<suite name="Browser Login " verbose="1">
     <parameter name="param" value="Test"/>
     
     
     
-    <test name="Print on browser Firefox">
-        <parameter name="browser" value="firefox"/>
+    <test name="Login on browser  IE10">
+        <parameter name="browser" value="browserFirefox"/>
         <classes>
             <class name="production.brand.BountyPreferenceCenter"/>
         </classes>
@@ -14,11 +15,20 @@
         <groups>
             <run>
                 <include name="create"/>
-                <include name="login"/>
+                <include name="blank"/>
+                <include name="wrong"/>
             </run>
         </groups>
+        
+     
+                             
+                          
+                             
+                             
+        
     </test>
     
    
+    
     
 </suite>

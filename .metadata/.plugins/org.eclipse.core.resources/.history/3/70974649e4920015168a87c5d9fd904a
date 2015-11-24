@@ -61,7 +61,7 @@ public class DesktopPreferenceCenter {
 	}
 
 	@BeforeMethod  
-	
+	  @Test(groups={"unit1"})
 	public void beforeMethod() {
 
 		System.out.println("I want to test using browser firefox ");
@@ -95,7 +95,7 @@ public class DesktopPreferenceCenter {
 	}
 	
 	
-	  @Test(groups={"unit1"})
+	  @Test(groups={"unit2"})
 	public  void testBlankLogin() {
 
 			System.out.println("Inside Test 1 - Blank Login");
@@ -151,7 +151,7 @@ public class DesktopPreferenceCenter {
 
 	}
 	
-	  @Test(groups={"unit2"})
+	  @Test(groups={"unit3"})
 	 public void testWrongLogin() {
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -195,7 +195,7 @@ public class DesktopPreferenceCenter {
 
 	
 
-	  @Test(groups={"unit3"})
+	  @Test(groups={"unit4"})
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");

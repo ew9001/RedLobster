@@ -68,13 +68,13 @@ public class DesktopPreferenceCenter  {
 		System.out.println("Let me run in Firefox");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("browser", "Chrome");
-		 caps.setCapability("browser_version", "45.0");
-		 caps.setCapability("os", "OS X");
-		 caps.setCapability("os_version", "Yosemite");
+		 caps.setCapability("browser", "IE");
+		 caps.setCapability("browser_version", "11.0");
+		 caps.setCapability("os", "Windows");
+		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
-	 caps.setCapability("browserstack.selenium_version", "2.47.1");
+	//	 caps.setCapability("browserstack.selenium_version", "2.47.1");
 			
 		 caps.setCapability("acceptSslCerts", "true");
 		    try {
@@ -84,7 +84,7 @@ public class DesktopPreferenceCenter  {
 				e.printStackTrace();
 			}
 	      System.out.println("Let me run Chrome 46 on Windows");
-	      browser_type=" MacOS42Chrome";
+	      browser_type=" MacOS42";
 	      System.out.println("Let me see which one get tested" +browser_type);
 	      System.out.println("Let me see which one get tested" +driver);
 	      driver.get("metawellness.com");

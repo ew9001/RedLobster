@@ -135,7 +135,7 @@ public class TestAnotations1 {
 	
 	@Test(groups = {"create"})
 	@Parameters({"browser"})
-	public void testWrongLogin() throws IOException{
+	public void testInvalidLogin() throws IOException{
 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
 			driver.findElement(By.id("phdesktopbody_0_username")).click();

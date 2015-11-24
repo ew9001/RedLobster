@@ -15,24 +15,13 @@
         <groups>
             <run>
                 <include name="create"/>
-               
-                        
-                  
-            </run>
-        </groups>
-            <groups>
-            <run>
-               
                 <include name="blank"/>
-                
-                  
-            </run>
-        </groups>
-              <groups>
-            <run>
-          
                 <include name="wrong"/>
-            
+                <include name="valid"/>
+                <include name="reset"/>
+                <include name="blank2"/>
+                <include name="wrong2"/>
+                        
                   
             </run>
         </groups>

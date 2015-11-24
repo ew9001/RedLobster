@@ -14,14 +14,17 @@
             
             <define name="all">
             <include name="create"/>
-            <include name="login"/>
-   
+            <include name="blank_login"/>
+            <include name="wrong_login"/>
+            <include name="right_login"/>
          </define>
          
             <run>
             <include name="create"/>
-            <include name="login"/>
-          
+            <include name="blank_login"/>
+            <include name="wrong_login"/>
+            <include name="right_login"/>
+
                         
                   
             </run>

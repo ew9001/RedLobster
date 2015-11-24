@@ -27,7 +27,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class DesktopPreferenceCenter  {
+public class DesktopPreferenceCenter {
 	
 	private static WebDriver driver;
 	 
@@ -60,7 +60,7 @@ public class DesktopPreferenceCenter  {
 
 	}
 
-	@Test(priority=1)
+	  @Test
 	
 	public void beforeMethod() {
 
@@ -95,7 +95,7 @@ public class DesktopPreferenceCenter  {
 	}
 	
 	
-	@Test(priority=2)
+	  @Test
 	public  void testBlankLogin() {
 
 			System.out.println("Inside Test 1 - Blank Login");
@@ -151,7 +151,7 @@ public class DesktopPreferenceCenter  {
 
 	}
 	
-	@Test(priority=3)
+	  @Test
 	 public void testWrongLogin() {
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
@@ -195,7 +195,7 @@ public class DesktopPreferenceCenter  {
 
 	
 
-	@Test(priority=4)
+	  @Test
 	public void testValidLogin() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 3 - Right Login");
@@ -231,7 +231,7 @@ public class DesktopPreferenceCenter  {
 	}
 
 
-	@Test(priority=5)
+	@Test
 	public void testResetPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 4 - Reset Password\n");
@@ -264,7 +264,7 @@ public class DesktopPreferenceCenter  {
 		     driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
 		
 	}
-	@Test(priority=6)
+	@Test
 	public void testSetBlankPassword() throws IOException, InterruptedException{
 
 			System.out.println("Inside Test 5 - Reset Password");
@@ -303,7 +303,7 @@ public class DesktopPreferenceCenter  {
 		
 	}
 	
-	@Test(priority=7)
+	@Test
 	
 	public void testSetWrongPassword() throws IOException, InterruptedException{
 

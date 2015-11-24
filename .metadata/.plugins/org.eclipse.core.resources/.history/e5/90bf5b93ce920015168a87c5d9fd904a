@@ -6,8 +6,8 @@
     
     
     
-    <test name="Login on browser Chrome">
-        <parameter name="browser" value="chrome"/>
+    <test name="Login on browser  IE10">
+        <parameter name="browser" value="browserFirefox"/>
         <classes>
             <class name="production.brand.BountyPreferenceCenter"/>
         </classes>

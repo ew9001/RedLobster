@@ -6,7 +6,7 @@
     
     
     
-    <test name="Login on browser Chrome">
+    <test name="Login on browser  IE10">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="production.brand.BountyPreferenceCenter"/>

@@ -61,7 +61,7 @@ public class DesktopPreferenceCenter {
 	}
 
 	@BeforeMethod  
-	public void beforeMethod() {
+	public void beforeMethod() throws IOException, InterruptedException{
 
 		System.out.println("I want to test using browser firefox ");
 		System.out.println("Let me run in Firefox");
@@ -76,12 +76,7 @@ public class DesktopPreferenceCenter {
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 			
 		 caps.setCapability("acceptSslCerts", "true");
-		    try {
-				driver = new RemoteWebDriver(new URL(URL), caps);
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		    driver = new RemoteWebDriver(new URL(URL), caps);
 	      System.out.println("Let me run Firefox  39 MAC OS");
 	      browser_type=" browserFirefox";
 	      System.out.println("Let me see which one get tested" +browser_type);
@@ -95,7 +90,7 @@ public class DesktopPreferenceCenter {
 	
 	
 	@Test
-	public  void testBlankLogin() {
+	public  void testBlankLogin() throws IOException{
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
@@ -111,22 +106,12 @@ public class DesktopPreferenceCenter {
 			//Assert that the error message is present
 			
 			error ="This is a mandatory field";
-		    try {
-				checkText(error);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		    checkText(error);
 		    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			error ="Fields marked with * are mandatory. Please complete all mandatory fields and re-submit.";
-		    try {
-				checkText(error);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		    checkText(error);
 		    //Take a picture
 		     
 			 System.out.println("I want to take a picture of the blank username & password");
@@ -135,12 +120,7 @@ public class DesktopPreferenceCenter {
 	       
 	        System.out.println("Image Name " +name);
 	        counter+=1;
-	        try {
-				takeScreenPortrait(name);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+	        takeScreenPortrait(name);
 		        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -150,8 +130,8 @@ public class DesktopPreferenceCenter {
 
 	}
 	
-	 @Test
-	 public void testWrongLogin() {
+	@Test
+	 public void testWrongLogin() throws IOException{
 		 
 			System.out.println("Inside Test 2 - Wrong Login / Password");
 			System.out.println("---------------------------");
@@ -167,22 +147,12 @@ public class DesktopPreferenceCenter {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				error ="The email and password combination you entered is incorrect. Please try again, or click the link below to create an account.";
-			    try {
-					checkText(error);
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+			    checkText(error);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				name=""+ browser_type+"/"+ counter + "_" + "Wrogn_login.png";
-		        try {
-					takeScreenPortrait(name);
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+		        takeScreenPortrait(name);
 		        System.out.println("Image Name " +name);
 		        counter+=1;
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

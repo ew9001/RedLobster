@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
-import org.testng.asserts.SoftAssert;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -41,7 +41,7 @@ public class DesktopPreferenceCenter  {
 	  public String browser_type;
 	  public String fail,error,url,rotate;
 	  
-	  SoftAssert soft_assert = new SoftAssert();
+	  
 	
 	    int counter=1;
 		String local=(new java.io.File("").getAbsolutePath());
@@ -557,10 +557,8 @@ public void testValidLogout() throws IOException, InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		   
-		   
-		   
 		   Actualtext = driver.findElement(By.id("phdesktopheader_0_phdesktopheadertop_1_anchrContinue")).getText();
-		   soft_assert.assertEquals(Actualtext, "LOG OUTS");
+	        Assert.assertEquals(Actualtext, "Continue");
 	        
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

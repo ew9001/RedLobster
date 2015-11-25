@@ -220,7 +220,7 @@ public class DesktopPreferenceCenter  {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				error ="Your Profile";
-			   // checkText(error);
+			    checkText(error);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -246,7 +246,7 @@ public class DesktopPreferenceCenter  {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			 	error ="Your Basic Information";
-			   // checkText(error);
+			    checkText(error);
 			     driver.findElement(By.id("phdesktopbody_0_HlinkReset")).click();
 			     driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 			 	driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
@@ -255,7 +255,7 @@ public class DesktopPreferenceCenter  {
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				Thread.sleep(100); 
 				error ="Reset Password";
-			   // checkText(error);
+			    checkText(error);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -285,13 +285,13 @@ public class DesktopPreferenceCenter  {
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				
 				error ="Fields marked with * are mandatory. Please complete all mandatory fields and re-submit.";
-			   // checkText(error);
+			    checkText(error);
 			    
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				
 				error ="This is a mandatory field.";
-			   // checkText(error);
+			    checkText(error);
 				Thread.sleep(100); 
 			
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -330,7 +330,7 @@ public class DesktopPreferenceCenter  {
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				
 				error ="We could not find an account with that Email address and Birthday/ZIP code.";
-			   // checkText(error);
+			    checkText(error);
 			    
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
@@ -374,7 +374,7 @@ public class DesktopPreferenceCenter  {
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				
 				error ="Set Password";
-			   // checkText(error);
+			    checkText(error);
 			    
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
@@ -413,7 +413,7 @@ public void testShortPassword() throws IOException, InterruptedException{
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     
 		     error ="The password must be minimum 8 characters, including at least 1 letter and 1 number.";
-		    // checkText(error);
+		     checkText(error);
 		     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
@@ -450,7 +450,7 @@ public void testAllChar() throws IOException, InterruptedException{
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     
 		     error ="The password must be minimum 8 characters, including at least 1 letter and 1 number";
-		    // checkText(error);
+		     checkText(error);
 		     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
@@ -491,7 +491,7 @@ public void testValidPassword() throws IOException, InterruptedException{
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		     
 		     error ="Don't have an account yet?";
-		    // checkText(error);
+		     checkText(error);
 		     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
@@ -530,7 +530,7 @@ public void testValidLogout() throws IOException, InterruptedException{
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				error ="Your Profile";
-			   // checkText(error);
+			    checkText(error);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -561,7 +561,7 @@ public void testValidLogout() throws IOException, InterruptedException{
 		   
 		
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			
+			driver.findElement(By.id("phdesktopheader_0_phdesktopheadertop_1_anchrContinue")).click();
 		 
 		 name=""+ browser_type+"/"+ counter + "_" + "Continue_Button_Click.png";
 	        takeScreenPortrait(name);
@@ -576,12 +576,6 @@ public void testValidLogout() throws IOException, InterruptedException{
 			id="phdesktopheader_0_phdesktopheadertop_1_anchrContinue";
 			actual="LOG OUT";
 			checkText(id,actual);
-			   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			 
-			
-			driver.findElement(By.id("phdesktopheader_0_phdesktopheadertop_1_anchrContinue")).click();
 	     
 	
 }

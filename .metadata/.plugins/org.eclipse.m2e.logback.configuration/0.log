@@ -397,3 +397,7 @@
 2015-11-24 19:01:56,722 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/agolubev1/Desktop/RedLobster/request.quote/src/main/resources
 2015-11-24 19:01:56,723 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-11-24 19:01:56,723 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/agolubev1/Desktop/RedLobster/request.quote/src/test/resources
+2015-11-24 19:02:45,328 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-11-24 19:02:45,328 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/agolubev1/Desktop/RedLobster/request.quote/src/main/resources
+2015-11-24 19:02:45,329 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-11-24 19:02:45,329 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/agolubev1/Desktop/RedLobster/request.quote/src/test/resources

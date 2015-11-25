@@ -51,8 +51,6 @@ public class DesktopPreferenceCenter  {
 		String csvFileToRead;
 		String slide1 = "Today's Fresh Fish";
 	
-		
-		
 	static String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 	
 	
@@ -61,17 +59,6 @@ public class DesktopPreferenceCenter  {
 	public void beforeClass(){
 
 		System.out.println("Initialize Selenium for Preference Center");
-		
-		String path="/dawn"; 
-        File file = new File(path);
-        File[] files = file.listFiles(); 
-        for (File f:files) 
-        {if (f.isFile() && f.exists()) 
-            { f.delete();
-            System.out.println("successfully deleted");
-            }else{
-            	System.out.println("cant delete a file due to open or error");
-} }
 
 	}
 

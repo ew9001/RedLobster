@@ -52,17 +52,7 @@ public class DesktopPreferenceCenter  {
 		String slide1 = "Today's Fresh Fish";
 	
 		
-		
-	static String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-	
-	
-	@BeforeClass
-
-	public void beforeClass(){
-
-		System.out.println("Initialize Selenium for Preference Center");
-		
-		String path="/dawn"; 
+		String path="Y://Brands/Pepto"; 
         File file = new File(path);
         File[] files = file.listFiles(); 
         for (File f:files) 
@@ -72,6 +62,15 @@ public class DesktopPreferenceCenter  {
             }else{
             	System.out.println("cant delete a file due to open or error");
 } }
+        
+	static String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+	
+	
+	@BeforeClass
+
+	public void beforeClass(){
+
+		System.out.println("Initialize Selenium for Preference Center");
 
 	}
 

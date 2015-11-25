@@ -7,7 +7,7 @@
   
     <classes>
         
-            
+            <class name="production.brand.TestPreferenceCenter"/>
       <class name="production.brand.DesktopPreferenceCenter"/>
      
     </classes>

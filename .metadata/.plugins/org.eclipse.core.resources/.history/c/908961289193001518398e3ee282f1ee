@@ -69,8 +69,8 @@ public class DesktopPreferenceCenter  {
 	
 	public void beforeMethod() {
 
-		System.out.println("I want to test using browser Chrome ");
-		System.out.println("Let me run in Chrome 45 MAC OS ");
+		System.out.println("I want to test using browser firefox ");
+		System.out.println("Let me run in Firefox");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browser", "Chrome");
@@ -105,7 +105,7 @@ public class DesktopPreferenceCenter  {
 
 			System.out.println("Inside Test 1 - Blank Login");
 			System.out.println("---------------------------");
-			driver.get("http://crest.com/");
+			driver.get("http://dawn-dish.com/");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.findElement(By.className("event_profile_login")).click();

@@ -117,12 +117,22 @@ public class DesktopPreferenceCenter  {
 			//Assert that the error message is present
 			
 			error ="This is a mandatory field";
-		    
+		    try {
+				checkText(error);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			error ="Fields marked with * are mandatory. Please complete all mandatory fields and re-submit.";
-		   
+		    try {
+				checkText(error);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		    //Take a picture
 		     
 			 System.out.println("I want to take a picture of the blank username & password");
@@ -163,7 +173,12 @@ public class DesktopPreferenceCenter  {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				error ="The email and password combination you entered is incorrect. Please try again, or click the link below to create an account.";
-			    
+			    try {
+					checkText(error);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
